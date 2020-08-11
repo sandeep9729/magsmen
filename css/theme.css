@@ -15201,14 +15201,24 @@ body {
 
 section {
     position: relative;
+<<<<<<< HEAD
     padding-top: 2rem;
     padding-bottom: 2rem
+=======
+    padding-top: 5rem;
+    padding-bottom: 5rem
+>>>>>>> 08a1d45a9f314aa7566670da4515d2efaf6e4af7
 }
 
 @media (min-width:992px) {
     section {
+<<<<<<< HEAD
         padding-top: 4rem;
         padding-bottom: 4rem
+=======
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem
+>>>>>>> 08a1d45a9f314aa7566670da4515d2efaf6e4af7
     }
 }
 
