@@ -259,7 +259,7 @@ window.onload = function() {
 };
 $(function () {
     $('#myButton').floatingWhatsApp({
-        phone: '+917569933566',
+        phone: '0123456789',
         popupMessage: 'Hello, how can we help you?',
         message: "I'd like to order a pizza",
         showPopup: true,
