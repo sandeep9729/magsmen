@@ -257,3 +257,16 @@ window.onload = function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 };
+$(function () {
+    $('#myButton').floatingWhatsApp({
+        phone: '+917569933566',
+        popupMessage: 'Hello, how can we help you?',
+        message: "I'd like to order a pizza",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
