@@ -298,7 +298,7 @@ $(document).ready(function(){
     $('.customer-logos').slick({
         width: 100,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 1500,
         arrows: false,
