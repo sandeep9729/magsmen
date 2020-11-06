@@ -1,930 +1,1029 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
 <head>
-    <title>MAGSMEN</title>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/magsmen-1.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo/magsmen-1.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo/magsmen-1.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/magsmen-1.png">
+    <title>MAGSMEN</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <meta name="msapplication-TileImage" content="assets/img/logo/magsmen-1.png">
-    <link rel="stylesheet" href="css/custom-bs.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="fonts/line-icons/style.css">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/theme.css">
-
-   
-
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="whatsapp/floating-wpp.css">
 
-    <link rel="stylesheet" href="css/icons.css">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="./images/magsmen-logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/magsmen-logo.png" type="image/x-icon">
 
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
-	
+    <style>
+        .site-main-logo {
+            height: 30%;
+            width: 25%;
+        }
+        .txtLeft{
+            text-align: left;
+        }
+
+        .floating-wpp .floating-wpp-popup.active {
+            padding: 0 12px 12px 12px;
+            width: 230px;
+            height: auto;
+            bottom: 82px;
+            opacity: 1;
+
+        }
+
+        #myButton textarea {
+            min-height: 10rem;
+        }
+
+        .bg-holder-2 {
+
+            width: 100%;
+            min-height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            will-change: transform, opacity, filter;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-repeat: no-repeat;
+        }
+        .flip-box {
+  background-color: transparent;
+  width: 250px;
+  height: 360px;
+  perspective: 1000px;
+  margin-right: 15px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:#121212;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.flip-box-back {
+  background-color: #121212;
+  color: white;
+  transform: rotateY(180deg);border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.brand-title {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.brand-desc {
+    font-size: 12px;
+    line-height: 1.3;
+    margin-top: 15px;
+    color: #fff;
+}
+.flex-fullWidhth{
+    display: flex !important;
+     width: 100% !important;
+}
+.align-icon{
+    float: none;
+    margin-top: 5px;
+}
+#OurServices li {
+    font-size: 14px;
+    line-height: 2;
+}
+#OurServices ul {
+    margin-bottom: 0;
+}
+.carousel-width{
+    max-width: 500px;
+}
+        @media screen and (max-width: 767px) {
+            .floating-wpp .floating-wpp-popup.active {
+                padding: 0 12px 12px 12px;
+                width: 210px;
+                height: auto;
+                bottom: 82px;
+                opacity: 1;
+
+            }
+
+            .pad-t-xs-125 {
+                padding-top: 125px;
+            }
+
+            .site-icon {
+                height: 60px !important;
+                width: 60px !important;
+            }
+
+            .pad-b-20-xs {
+                padding-bottom: 20px;
+            }
+
+            .pad-t-10-xs {
+                padding-top: 10px;
+            }
+
+            .pad-v-50-xs {
+                padding: 50px 0;
+            }
+            .flex-fullWidhth{
+                display: block !important;
+                width: 100% !important;
+            }
+            .flip-box {
+                background-color: transparent;
+                width: 100%;
+                height: 300px;
+                perspective: 1000px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .carousel-width{
+                max-width: 350px;
+            }
+        }
+        @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+            .flip-box {
+                background-color: transparent;
+                width: 220px;
+                height: 400px;
+                perspective: 1000px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+        }
+        @media only screen 
+        and (min-device-width : 768px) 
+        and (max-device-width : 1024px) 
+        and (orientation : portrait) { 
+            .flip-box {
+                background-color: transparent;
+                width: 220px;
+                height: 500px;
+                perspective: 1000px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 
-<body>
 
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <!-- <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+    </div> -->
+    
     <div id="overlayer"></div>
     <div class="loader">
         <!-- <div class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div> -->
-        <img src="./images/logo/magsmen-1.gif" alt="" srcset="">
+        <img src="./images/magsmen-loader.gif" alt="" srcset="">
     </div>
 
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-    <div class="site-wrap">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img class="site-icon" src="images/magsmen-logo.png" alt="Homepage">
+            </a>
+        </div> <!-- end header-logo -->
 
-        <div class="site-mobile-menu site-navbar-target">
-            <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
-                </div>
-            </div>
-            <div class="site-mobile-menu-body"></div>
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <h3 class="mx-3">Navigate to</h3>
+
+            <div class="header-nav__content">
+
+                <ul class="header-nav__list">
+                    <li><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll" href="#approach" title="approach">Our Approach</a></li>
+                    <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+                </ul>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/magsmenindia" target="_blank"><i class="fab fa-facebook-f"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/magsmenindia/" target="_blank"><i class="fab fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=https://www.youtube.com/channel/UCG3agq3IYZmQifQeM2xFNbQ target="_blank"><i
+                                class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/magsmen/?viewAsMember=true" target="_blank"><i
+                                class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
+        data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <!-- <div class="grid-overlay">
+            <div></div>
+        </div> -->
+
+        <div class="bg-holder">
+            <div class="bg-video">
+                <video autoplay muted loop>
+                    <source src="./assets/main_background_video.mp4" type="video/mp4">
+                </video> </div>
         </div>
-        <!-- .site-mobile-menu -->
+
+        <div class="home-content">
+            <div style="display: flex; justify-content: center;">
+                <img class="site-main-logo" src="images/MASGMEN-white_caption.png" />
+            </div>
+            <div class="row home-content__main">
+
+                <!-- <h1>MAGSMEN</h1> -->
+
+                <h3>Building Brands Since COVID</h3>
+
+                <div class="home-content__button">
+                    <a href="#about" class="smoothscroll btn btn--primary btn--large">
+                        More About Us
+                    </a>
+                    <a href="#contact" class="smoothscroll btn btn--large">
+                        Let's Talk
+                    </a>
+                </div>
+
+            </div> <!-- end home-content__main -->
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    Scroll
+                </a>
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="https://www.facebook.com/magsmenindia" target="_blank"><i class="fab fa-facebook-f"
+                        aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/magsmenindia/" target="_blank"><i class="fab fa-instagram"
+                        aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href=https://www.youtube.com/channel/UCG3agq3IYZmQifQeM2xFNbQ target="_blank"><i
+                        class="fab fa-youtube" aria-hidden="true"></i><span>YouTube</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/magsmen/?viewAsMember=true" target="_blank"><i
+                        class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+
+        </ul> <!-- end home-social -->
+
+    </section> <!-- end s-home -->
 
 
-        <!-- NAVBAR -->
-        <header class="site-navbar mt-3" id="top">
-            <div class="container-fluid">
-                <div class="row align-items-center">
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section pad-t-10-xs pad-b-20-xs">
 
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Who We Are</h3>
+                <h1 class="display-1">
+                    You should know about us
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
 
+        <div class="row bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                    Every Business desires to build a better market and increase their market share in their respective
+                    industries. In the world of fast-evolving businesses, Branding has become a significant resource for
+                    the businesses to compete in the Market.
+                </p>
+                <p class="lead">
+                    MAGSMEN, is a brand consulting firm, which is designed to formulate the strategies for the existing
+                    businesses to compete in this hyper competitive global business market. We at MAGSMEN, initially,
+                    conduct the Brand Audit for the business, discuss the current or existing business performance with
+                    the client using the THE MAGSMEN’s Approach.
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
 
+        <div class="row bit-narrow">
 
+            <div class="about-process process block-1-3 block-tab-full">
 
-                    <nav id="navbar" class="navbar">
-                        <ul class="nav-menu">
-                            <li>
-                                <a data-scroll="home" href="#home" class="dot active">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll="work" href="#whyus" class="dot">
-                                    <span>Why us</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll="about" href="#about-us-section" class="dot">
-                                    <span>About</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll="services" href="#services" class="dot">
-                                    <span>Services</span>
-                                </a>
-                            </li>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Vision</h4>
+                        <p>
+                            Creating & Increasing Business values with brand stories.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text center">
+                        <h4 class="item-title">Mission</h4>
+                        <p class="text-justify">
+                            To help the brands become bigger and better. To help the brands succeed in the competitive
+                            market. To redefine the meaning of branding.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Build</h4>
+                        <p class="text-justify">
+                            We strongly believe in the power of entrepreneur’s vision to help the brands succeed and
+                            change the world, Our primary objective is to build a brand strategy road map with the blend
+                            of Impeccable strategies combined with excellent road maps for a better and notable
+                            achievements.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end process -->
 
-                            <li>
-                                <a data-scroll="testimonial" href="#how" class="dot">
-                                    <span>how we do</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll="contact" href="#contact" class="dot">
-                                    <span>Contact</span>
-                                </a>
-                            </li>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services target-section darker">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Services</h3>
+                <h1 class="display-1">
+                    We take pride in what we do to turn your ideas into digital realities
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row bit-narrow services block-1-2 block-tab-full">
+
+            <div class="col-block item-service flex-fullWidhth" data-aos="fade-up" id="OurServices">
+                <!-- <div class="item-service__icon">
+                    <i class="icon-star"></i>
+                </div> -->
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <div class="item-service__icon align-icon">
+                            <i class="icon-star"></i>
+                        </div>
+                        <p class="brand-title">Brand Identity</p>
+                        <p class="brand-desc">Your brand is your every effort to communicate who you are and what you do. You can see it, feel it and experience it. We'll dig deep to understand your business, audience and landscape to accurately represent the essence of your organization. We'll build you a memorable brand that communicates clearly and sets you apart from your competition.</p>
+                      </div>
+                      <div class="flip-box-back">
+                        <ul class="txtLeft">
+                            <li>Brand Development</li>
+                            <li>Brand Material Design</li>
+                            <li>Brand Creation</li>
+                            <li>Brad Naming</li>
+                            <li>Brand Expansion</li>
+                            <li>Franchise Model</li>
+                            <li>Pricin Design</li>
+                            <li>Rebranding</li>
+                            <li>Logo Design</li>
+                            <li>Website Development</li>
                         </ul>
-                    </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <div class="item-service__icon align-icon">
+                            <i class="icon-pie-chart"></i>
+                        </div>
+                        <p class="brand-title">Marketing</p>
+                        <p class="brand-desc">A good marketing strategy allows you to find the right people,
+                            communicate the right messages, and send them to the right places.
+                            Together we can turn views into engagement and traffic into conversions.
+                            Attract attention and drive real conversions.
+                            We'll determine where your audience spends their time and craft effective,
+                            targeted campaigns for the platforms that make the most sense for you.</p>
+                      </div>
+                      <div class="flip-box-back">
+                        <ul class="txtLeft">
+                            <li>SEO</li>
+                            <li>Social Media Marketing</li>
+                            <li>Promotion Planning</li>
+                            <li>Offline Marketing</li>
+                            <li>Posters Design</li>
+                            <li>Brochures & Flyers</li>
+                            <li>Offline Marketing</li>
+                            <li>Web Optimisation</li>
+                            <li>Marketing Strategy</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <div class="item-service__icon align-icon">
+                            <i class="icon-desktop"></i>
+                        </div>
+                        <p class="brand-title">Web Development</p>
+                        <p class="brand-desc">Your website is the home base for all your digital marketing and communications.
+                            We'll craft a web presence that works great on desktop and mobile devices.
+                            Our sites are easy to manage and integrate seamlessly with other online channels like social
+                            media and digital marketing.</p>
+                      </div>
+                      <div class="flip-box-back">
+                        <ul class="txtLeft">
+                            <li>Website Design</li>
+                            <li>Website Creation</li>
+                            <li>Website Content Writing</li>
+                            <li>Website Management</li>
+                            <li>Website Development</li>
+                            <li>Application Development</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <div class="item-service__icon align-icon">
+                            <i class="icon-cube"></i>
+                        </div>
+                        <p class="brand-title">Content</p>
+                        <p class="brand-desc">
+                            Content often palys a very important role for any brand, the worldd is changing so as the customers. With each passing day, the importance of smart content is placing a huge role in customer engagement. The quality of the content will percieve the brand. It has to be enfgaging, informative and helpful not boastful, promotional or keyword ridden.
+                        </p>
+                      </div>
+                      <div class="flip-box-back">
+                        <ul class="txtLeft">
+                            <li>Content Writing</li>
+                            <li>Protfolio Design</li>
+                            <li>Website Content</li>
+                            <li>Brand Content Plan</li>
+                            <li>Content Development</li>
+                            <li>Franchise Model</li>
+                            <li>Poster Content</li>
+                            <li>StoryTelling Branding</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <div class="item-service__icon align-icon">
+                            <i class="icon-video"></i>
+                        </div>
+                        <p class="brand-title">Video</p>
+                        <p class="brand-desc">
+                            It's always better to show than simply say it. Keeping in mind, the today's consumers, its always essential to give them a little more pitch about our brand with stunning videos.
+                            When it comes to our video creation apavbilities, watching is truly unbelievable. You have an idea.? we'll take it to the next level, if you don't know what you need for your brand, dont't worry, we'll plan it for you.
+                        </p>
+                      </div>
+                      <div class="flip-box-back">
+                        <ul class="txtLeft">
+                            <li>Logo Reveal Videos</li>
+                            <li>Product Teasers</li>
+                            <li>Explainer Videos</li>
+                            <li>Story Telling Videos</li>
+                            <li>Ad Planning</li>
+                            <li>Video Animations</li>
+                            <li>Brand Launch Videos</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
 
 
+    </section> <!-- end s-services -->
+
+    <!-- approach
+    ================================================== -->
+    <section id="approach" class="s-approach target-section darker" style="padding-bottom: 0">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our 5D's Approach</h3>
+                <h1 class="display-1">
+                    Do you want to know how we do
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+    </section> <!-- end s-about -->
+
+    <section class="s-video target-section">
+
+        <div class="row services block-1-1 block-tab-full">
+
+            <div data-aos="fade-up">
+                <div class="bg-holder-2">
+                    <div class="bg-video-2">
+                        <video style="max-width: 100%; height: auto;" autoplay muted loop>
+                            <source src="./assets/our_approach.m4v" type="video/mp4">
+                        </video> </div>
 
                 </div>
             </div>
-        </header>
 
-        <!-- HOME -->
-        <section class="home-section section-hero overlay " id="home">
+        </div>
 
-            <div class="container">
-                <div class="row align-items-center justify-content-center" style="padding-bottom: 203px;">
-                    <div class="col-md-8 text-center">
-                        <img src="./images/logo/MASGMEN-white_caption.png" width="50%" height="30%" alt="">
-                        <h1> <span class="txt-rotate" data-period="3000" data-rotate='[ "BUILDING BRAND stories","WE MAKE SOMETHING FABULOUS."]'></span></h1>
-                        <div class="mx-auto w-75">
+    </section>
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section pad-b-20-xs">
 
+        <div class="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Works</h3>
+                <h1 class="display-1">
+                    Check out our recent works
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row masonry-wrap">
+
+            <div class="masonry">
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/lion_paint.jpg" class="thumb-link" title="Lion Gold Paint"
+                                data-size="1050x700">
+                                <img src="images/portfolio/lion_paint.jpg" alt="">
+                            </a>
                         </div>
-                        <!-- <p class="mt-5"><a href="#contact" class="btn btn-outline-white btn-md ">Get in touch</a></p><br> -->
-                        <!-- <button class="button button1" href="#contact">GET IN TOUCH</button> -->
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Lion Gold Paint
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/bd.jpg" class="thumb-link" title="Bakery Delights"
+                                data-size="1050x700">
+                                <img src="images/portfolio/bd.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Bakery Delights
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/box.jpg" class="thumb-link" title="The #Box"
+                                data-size="1050x700">
+                                <img src="images/portfolio/box.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                The #Box
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/i9.png" class="thumb-link" title="I9 Builders"
+                                data-size="1050x700">
+                                <img src="images/portfolio/i9.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                I9 Builders
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+
+
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-works -->
+
+
+    <!-- about
+    ================================================== -->
+    <section class="s-video target-section">
+
+        <div class="row services block-1-2 block-tab-full">
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="bg-holder-2">
+                    <div class="bg-video-2">
+                        <video width="700px" style="max-width: 100%; height: auto;" autoplay muted loop>
+                            <source src="./assets/do_not_blink.m4v" type="video/mp4">
+                        </video> </div>
+
+                </div>
+            </div>
+
+            <div class="col-block item-service pad-t-xs-120" data-aos="fade-up" style="margin-bottom: 50px;">
+                <div class="video-content">
+                    <div class="col-lg-5 ml-auto">
+                        <h2 class="section-title mb-3" style="margin-top: 10px;">Lets Build Your Stories</h2>
+
+                        <p class="ls-0 mb-0 text-left">
+                            Marketing
+                        </p>
+                        <p class="ls-0 mb-0 text-left">
+                            Audit &amp; Advertising
+                        </p>
+                        <p class="ls-0 mb-0 text-left">
+                            Growth
+                        </p>
+                        <p class="ls-0 mb-0 text-left">
+                            Strategy
+                        </p>
+                        <p class="ls-0 mb-0 text-left">
+                            Multi Channel Design
+                        </p>
+                        <p class="ls-0 mb-0 text-left">
+                            Engagement
+                        </p>
+                        <p class="ls-0 mb-0 text-left">Notable Acheivements
+                        </p>
+
                     </div>
                 </div>
             </div>
 
-            <!-- VIDEO -->
-            <!-- <div class="video-container">
-                <video autoplay="true" loop="true">
-          <source type="video/mp4" src="videos/bg1.mp4">
-        </video>
+        </div>
+
+    </section>
+
+    <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients target-section lighter">
+
+        <div class="row section-header text-center narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Clients</h3>
+                <!-- <h1 class="display-1 darker-text">Who we have work with</h1> -->
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row clients-wrap" data-aos="fade-up">
+
+            <div class="row bit-narrow carousel-width">
+                <section class="customer-logos slider carousel-width">
+                    <div class="slide">
+                        <div class="slick-image">
+                            <img src="./images/client-logos/bakerydelights.png">
+                        </div>
+                    </div>
+                    <div class="slide"><img src="./images/client-logos/bni.png"></div>
+                    <div class="slide"><img src="./images/client-logos/coastal_logo.png"></div>
+                    <div class="slide"><img src="./images/client-logos/gowri.png"></div>
+                    <div class="slide"><img src="./images/client-logos/hasbox.png"></div>
+                    <div class="slide"><img src="./images/client-logos/i9 black new.svg"></div>
+                    <div class="slide"><img src="./images/client-logos/ideabox.png"></div>
+                    <div class="slide"><img src="./images/client-logos/integrity_global_services.png"></div>
+                    <div class="slide"><img src="./images/client-logos/kamadenu.png"></div>
+                    <div class="slide"><img src="./images/client-logos/nikith.png"></div>
+                    <div class="slide"><img src="./images/client-logos/rootcap.png"></div>
+                    <div class="slide"><img src="./images/client-logos/workmen.png"></div>
+                </section>
+            </div>
+
+    </section> <!-- end s-clients -->
+
+
+    <!-- testimonies
+    ================================================== -->
+    <!-- <section class="s-testimonials">
+
+        <div class="testimonials__icon" data-aos="fade-up"></div>
+
+        <div class="row testimonials narrow">
+
+            <div class="col-full testimonials__slider" data-aos="fade-up">
+
+                <div class="testimonials__slide">
+                    <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
+                    Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
+                    <div class="testimonials__author">
+                        Tim Cook
+                        <span>CEO, Apple</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                    <div class="testimonials__author">
+                        Sundar Pichai
+                        <span>CEO, Google</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+                    <div class="testimonials__author">
+                        Satya Nadella
+                        <span>CEO, Microsoft</span>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- end s-testimonials -->
+
+   <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <!-- <div class="grid-overlay">
+                <div></div>
             </div> -->
 
-            <div class="bg-holder overlay overlay-z-index-1">
-                <div class="bg-video">
-
-                    <video autoplay muted loop>
-                  <source src="assets/img/bg1.mp4"  type="video/mp4">
-                 
-                </video> </div>
+        <div class="row section-header narrow" >
+            <div class="col-full">
+                <h3 class="subhead">Keep In Touch</h3>
+                <h2 class="display-2">Feel free to contact us for any <br> project idea or collaboration</h2>
             </div>
+        </div> <!-- end section-header -->
 
-            <a href="#about-us-section" class="scroll-button smoothscroll">
-                <span class=" icon-keyboard_arrow_down"></span>
-            </a>
+        <div class="row contact-main" >
+            <div class="col-full">
+                <p class="contact-email">
+                    <a href="mailto:gmail.com">growth@magsmen.in</a>
+                </p>
+                <p class="contact-address">
+                    5-37-163 4/13 Brodipet, <br>
+                    S & S Chambers, Opp Singapore plaza <br>
+                    Guntur, 522002. <br>
+                </p>
+                <p class="contact-numbers">
+                    +91 9044910449
+                </p>
 
-        </section>
-
-
-
-        <!-- <section> begin ============================-->
-        <section id="whyus">
-            <div class="container">
-                <!-- <div class="row text-center mb-4" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="col">
-                            <div class="overflow-hidden">
-                                <h2 class="fs-sm-5 mb-2" data1-zanim-xs1='{"duration":1.5,"delay":0}'>Why choose us</h2>
-                            </div>
-                            <div class="overflow-hidden">
-                                <p class="fs--1 text-uppercase text-white ls-0 mb-0" data1-zanim-xs1='{"duration":1.5,"delay":0.1}'>Choosing an agency is tough. <br class="d-block d-sm-none" />let us convince you</p>
-                            </div>
-                            <div class="overflow-hidden">
-                                <hr class="hr-short border-black" data1-zanim-xs1='{"duration":1.5,"delay":0.2}' />
-                            </div>
-                        </div>
-                    </div> -->
-                <div class="row text-center text-md-left">
-                    <div class="col-sm-6 col-md-4 px-lg-4 pt-md-3 pt-lg-0 pb-lg-4 h-100 feature-item">
-                        <h4 class="pl-lg-3" data1-zanim-xs1='{"duration":2,"delay":0.1}'>Vision</h4>
-                        <hr class="hr-feature d-block d-sm-none border-black mt-0 mb-2" />
-                        <div class="border-lg-top border-lg-right py-lg-3 pl-lg-0 line-indicator line-indicator-top line-indicator-top-1">
-                            <div class="checked-indicator text-black checked-indicator-top"><span class="fas fa-check" data-fa-transform="shrink-2"></span></div>
-                            <p class="px-lg-3 mb-0">Creating & Increasing <br class="d-block d-sm-none" />Business values with brand stories.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 px-lg-4 pt-3 pt-sm-0 pt-md-3 pt-lg-0 pb-lg-4 h-100 feature-item">
-                        <h4 class="pl-lg-3" data1-zanim-xs1='{"duration":2,"delay":0.2}'>Mission</h4>
-                        <hr class="hr-feature d-block d-sm-none border-black mt-0 mb-2" />
-                        <div class="border-lg-top border-lg-right py-lg-3 pl-lg-0  line-indicator line-indicator-top line-indicator-top-2">
-                            <div class=" checked-indicator checked-indicator-top"><span class="fas fa-check" data-fa-transform="shrink-2"></span></div>
-                            <p class="text-leftpx-lg-4 mb-md-0">To help the brands become bigger and better</p>
-
-                            <p class="text-leftpx-lg-4 mb-md-0"> To help the brands succeed in the competitive market</p>
-                            <p class="text-leftpx-lg-4 mb-md-0"> To redefine the meaning of branding</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 px-lg-4 pt-3 pt-lg-0 pb-lg-4 h-100 feature-item">
-                        <h4 class="pl-lg-3" data1-zanim-xs1='{"duration":2,"delay":0.3}'>Objective</h4>
-                        <hr class="hr-feature d-block d-sm-none border-black mt-0 mb-2" />
-                        <div class="border-lg-top border-lg-right py-lg-3 pl-lg-0 line-indicator line-indicator-top line-indicator-top-3">
-                            <div class="checked-indicator checked-indicator-top"><span class="fas fa-check" data-fa-transform="shrink-2"></span></div>
-                            <p class="px-lg-3 mb-md-0">We strongly believe in the power of entrepreneur’s vision to help the brands succeed and change the world, Our primary objective is to build a brand strategy road map with the blend of Impeccable strategies combined with excellent
-                                road maps for a better and notable achievements. </p>
-                        </div>
-                    </div>
-                    <div class="col-12 my-3 d-none d-md-block">
-                        <div class="row justify-content-center">
-                            <div class="col-10 p-0"><img class="w-100" src="assets/img/illustration/process-image-6.png" alt="" /></div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-            <!-- end of .container-->
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
-
-        <!-- ABOUT US -->
-        <section class="site-section about-us-section" id="about-us-section">
-            <div class="container">
-
-                <div class="row mb-5 pt-0 ">
-                    <div class="col-md-6 align-self-center">
-                        <h2 class="section-title-sub text-p">About Us</h2>
-                     
-
-                        <p>Every Business desires to build a better market and increase their market share in their respective industries. In the world of fast-evolving businesses, Branding has become a significant resource for the businesses to compete
-                            in the Market.</p>
-                        <p>MAGSMEN, is a Brand consulting firm, which is designed to formulate the strategies for the existing businesses to compete in this hyper competitive global business market. We at MAGSMEN, initially, conduct the Brand Audit for the
-                            business, discuss the current or existing business performance with the client using the THE MAGSMEN’s Approach..
-
-                        </p>
-                        <!-- <p class="mt-4"><a href="#" class="spepcial_link">Read more about us</a></p> -->
-                    </div>
-                    <div class="col-md-5 ml-auto img-overlap">
-                        <div class="img-1"><img src="images/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow"></div>
-                        <div class="img-2"><img src="images/sq_img_10.jpg" alt="Image" class="img-fluid img-shadow"></div>
-                    </div>
-                </div>
-
-                <div class="row pb-0 border-top pt-5 block__19738 section-counter">
-
-                    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="d-flex align-items-center justify-content-center mb-2">
-                            <span class="icon-line-mobile mr-3"></span>
-                            <strong class="number" data-number="6">0</strong>
-                        </div>
-                        <span class="caption">Completed Projects</span>
-                    </div>
-
-                    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="d-flex align-items-center justify-content-center mb-2">
-                            <span class="icon-line-lightbulb mr-3"></span>
-                            <strong class="number" data-number="11">0</strong>
-                        </div>
-                        <span class="caption">Clients</span>
-                    </div>
-
-                    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="d-flex align-items-center justify-content-center mb-2">
-                            <span class="icon-line-trophy mr-3"></span>
-                            <strong class="number" data-number="5">0</strong>
-                        </div>
-                        <span class="caption">Number of Team</span>
-                    </div>
-
-                    <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="d-flex align-items-center justify-content-center mb-2">
-                            <span class="icon-line-puzzle mr-3"></span>
-                            <strong class="number" data-number="1">0</strong>
-                        </div>
-                        <span class="caption">Years</span>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="py-5 text-center bg-black text-white">
-            <div class="container">
-                <div class="overflow-hidden">
-                    <h4 class="font-weight-normal text-white mb-1" data-zanim-xs='{"duration":1.5,"delay":0}'>The magsmen’s <br class="d-block d-sm-none" /> SDCT MIX</h4>
-                </div>
-                <div class="overflow-hidden">
-                    <img src="assets/img/Approach.png" alt="" srcset="">
-                </div>
-
-            </div>
-            <!-- end of .container-->
-        </section>
-
-
-        <!-- SERVICES -->
-
-        <section class="text-center" id="services">
-            <div class="container">
-                <div class="row mb-4" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                    <div class="col">
-                        <div class="overflow-hidden">
-                            <h2 class="fs-md-5" data1-zanim-xs='{"duration":"1.5","delay":0}'>our services</h2>
-                        </div>
-                        <div class="overflow-hidden">
-                            <p class="fs--1 text-uppercase text-white ls-0 mb-0" data1-zanim-xs='{"duration":"1.5","delay":0.1}'>we plan, design, build and market high quality products</p>
-                        </div>
-                        <div class="overflow-hidden">
-                            <hr class="hr-short border-black" data1-zanim-xs='{"duration":"1.5","delay":0.2}' />
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-4 mb-3" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="overflow-hidden">
-                            <div class="service-item p-3 p-md-4 h-100">
-                                <div class="overflow-hidden">
-                                    <div class="px-4" data1-zanim-xs='{"duration":"1.5","delay":"0.2"}'><img class="service-icon" src="assets/img/line-icons/icons/pear.svg" alt="" /></div>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="font-weight-normal ls-2 mb-2" data1-zanim-xs='{"duration":"1.5","delay":"0.30000000000000004"}'>Brand identity</h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="font-weight-normal" data1-zanim-xs='{"duration":"1.5","delay":"0.4"}'>Your brand is your every effort to communicate who you are and what you do. You can see it, feel it and experience it. We'll dig deep to understand your business, audience and landscape to accurately represent the essence
-                                        of your organization. We'll build you a memorable brand that communicates clearly and sets you apart from your competition.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 mb-3" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="overflow-hidden">
-                            <div class="service-item p-3 p-md-4 h-100">
-                                <div class="overflow-hidden">
-                                    <div class="px-4" data1-zanim-xs='{"duration":"1.5","delay":"0.4"}'><img class="service-icon" src="assets/img/line-icons/icons/pie-chart.svg" alt="" /></div>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="font-weight-normal ls-2 mb-2" data1-zanim-xs='{"duration":"1.5","delay":"0.5"}'>Marketing</h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="font-weight-normal" data1-zanim-xs='{"duration":"1.5","delay":"0.6000000000000001"}'>A good marketing strategy allows you to find the right people, communicate the right messages, and send them to the right places. Together we can turn views into engagement and traffic into conversions. Attract attention
-                                        and drive real conversions. We'll determine where your audience spends their time and craft effective, targeted campaigns for the platforms that make the most sense for you.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-3" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="overflow-hidden">
-                            <div class="service-item p-3 p-md-4 h-100">
-                                <div class="overflow-hidden">
-                                    <div class="px-4" data1-zanim-xs='{"duration":"1.5","delay":"0"}'><img class="service-icon" src="assets/img/line-icons/icons/fountain-pen.svg" alt="" /></div>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="font-weight-normal ls-2 mb-2" data1-zanim-xs='{"duration":"1.5","delay":"0.1"}'>Web Development</h5>
-                                </div>
-                                <div class="overflow-hidden ">
-                                    <p class="font-weight-normal" data1-zanim-xs='{"duration":"1.5","delay":"0.2"}'>Your website is the home base for all your digital marketing and communications. We'll craft a web presence that works great on desktop and mobile devices. Our sites are easy to manage and integrate seamlessly with
-                                        other online channels like social media and digital marketing. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row justify-content-center" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                    <div class="col-12 mb-4">
-                        <div class="overflow-hidden">
-                            <h2 class="fs-md-5 mb-2" data1-zanim-xs='{"duration":"1.5","delay":0}'>Activities we do</h2>
-                        </div>
-                        <div class="overflow-hidden">
-                            <hr class="hr-short border-black" data1-zanim-xs='{"duration":"1.5","delay":0.2}' />
-                        </div>
-                    </div>
-                </div>
-                <div id="posts" class="row no-gutter">
-
-
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://www.facebook.com/magsmenindia" target="_blank"><i class="fab fa-facebook-f"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/magsmenindia/" target="_blank"><i class="fab fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCG3agq3IYZmQifQeM2xFNbQ" target="_blank"><i
+                                class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/magsmen/?viewAsMember=true" target="_blank"><i
+                                class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
                    
+                </ul>
 
-                   
+                <h2 class="display-2">Get in touch on whatsapp right away</h2>
 
-                    <div class="col-sm-6 col-lg-4 px-2 item design mb-3">
-                        <div href="#" class="item-wrap">
-                            <span>
-                                   
-                                <h5 class="text-white lh-1 fs-2">branding</h5>
-                                <p class="ls-0 mb-0 text-left">
-                                    Brand creation
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-                                    Brand Development
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-
-                                    Brand Naming
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-                                    Brand Extension/ Expansion
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-
-                                    Business Proposals for Investments
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-                                    Brand Strategy
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-                                    Brand Materials
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left"> Packaging Design
-                                </p>
-                                <p class="ls-0 mb-0 text-left">Rebranding
-                                </p>
-                                <p class="ls-0 mb-0 text-left">Pricing formulation
-                                </p>
-                                <p class="ls-0 mb-0 text-left">Logo design
-                                </p>
-
-                                    
-                                </span>
-                            <img class="img-fluid" src="assets/img/projects/branding.jpg">
-                        </div>
-                    </div>
-                     <div class="col-sm-6 col-lg-4 px-2 item design mb-3" data1-zanim-xs='{"animation":"zoom-in","delay":0.1}'>
-                        <div href="#" class="item-wrap">
-                            <span>
-                                <h5 class="text-white lh-1 fs-2">Marketing</h5>
-
-                                <p class="ls-0 mb-0 text-left">Social
-                                </p>
-                                <p class="ls-0 mb-0 text-left"> Offline Marketing strategies
-                                </p>
-
-                                <p class="ls-0 mb-0 text-left"> Strategy
-                                </p>
-
-                                <p class="ls-0 mb-0 text-left"> creation and Development
-                                </p>
-                                <p class="ls-0 mb-0 text-left"> Content
-                                </p>
-                                <p class="ls-0 mb-0 text-left"> Digital Marketing
-                                </p>
-                                <p class="ls-0 mb-0 text-left"> Media
-                                </p>
-                                <p class="ls-0 mb-0 text-left"> Product video shoots and Designs
-                                </p>
-
-                                <p class="ls-0 mb-0 text-left"> Digital Transformation
-                                </p>
-
-                                    
-                                </span>
-                            <img class="img-fluid" src="assets/img/projects/9.jpg">
-                        </div>
-                    </div>
-
-                   <div class="col-sm-6 col-lg-4 px-2 item design mb-3" data1-zanim-xs='{"animation":"zoom-in","delay":0.1}'>
-                        <div href="#" class="item-wrap">
-                            <span>
-                                   
-                                        <h5 class="text-white lh-1 fs-2">Web Development</h5>
-
-                                        <p class="ls-0 mb-0 text-left">Website Designing & Development
-                                        </p>
-                                        <p class="ls-0 mb-0 text-left"> Content Management
-                                        </p>
-                                        <p class="ls-0 mb-0 text-left"> Web engagement
-                                        </p>
-                                        <p class="ls-0 mb-0 text-left"> Search engine optimization
-                                        </p>
-                                        <p class="ls-0 mb-0 text-left"> Custom user experience
-                                        </p>
-
-                                    
-                                </span>
-                            <img class="img-fluid" src="assets/img/projects/1.jpg">
-                        </div>
-                    </div>
-
-
-
+                <div id="myButton" style="margin: auto; padding-top: 10px; display: inline-table;"></div>
+                <div class="form-field">
 
 
                 </div>
-            </div>
-         </div>
-           <!-- end of .container-->
-     </section>
-
-
-    <!--  -->
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section id="how">
-        <div class="container ">
-            <div class="row">
-                <div class="col mb-4 text-center" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                    <div class="overflow-hidden">
-                        <h2 class="fs-md-5" data1-zanim-xs='{"duration":"1.5","delay":0}'>how we do it</h2>
-                    </div>
-                    <div class="overflow-hidden">
-                        <p class="fs--1 text-uppercase  ls-0 mb-0" data1-zanim-xs='{"duration":"1.5","delay":0.1}'>We believe the best brands tell stories, which is why we partner with our clients to create impactful work that not only represents their business, but also connects them with people emotionally. Through strategy, design, content,
-                            and technology.</p>
-                    </div>
-                    <div class="overflow-hidden">
-                        <hr class="hr-short border-black" data1-zanim-xs='{"duration":"1.5","delay":0.2}' />
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-9 px-5">
-                    <div class="media process-item border-dashed-left border-600 pb-5" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="process-icon-circle"><img class="process-icon" src="assets/img/line-icons/medical-result.svg" alt="" /></div>
-                        <div class="media-body ml-4 ml-sm-5">
-                            <h5 class="ls-1 text-white"><span class="bg-black pr-3">Discuss</span></h5>
-                            <p class="mb-0" data1-zanim-xs='{"from":{"opacity":0},"to":{"opacity":1},"duration":1,"delay":0.2}'>Discuss with the client about the current Brand situation.</p>
-                        </div>
-                    </div>
-                    <div class="media process-item border-dashed-left border-600 border-md-left-0 border-md-dashed-right pb-5" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="media-body position-relative ml-4 ml-sm-5 ml-md-0 mr-md-5">
-                            <h5 class="text-md-right text-white"> <span class="bg-black pl-md-3">Determine</span><span class="process-devider border-right-0 l-0"></span></h5>
-                            <p class="mb-0 text-md-right" data1-zanim-xs='{"from":{"opacity":0},"to":{"opacity":1},"duration":1,"delay":0.3}'>USing the Magsmen's brand audit checklist, we will determine the issues and solutions that could be helpful for the growth of brand</p>
-                        </div>
-                        <div class="process-icon-circle"><img class="process-icon" src="assets/img/line-icons/web-programming.svg" alt="" /></div>
-                    </div>
-                    <div class="media process-item border-dashed-left border-600 pb-5" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="process-icon-circle"><img class="process-icon" src="assets/img/line-icons/technical-support.svg" alt="" /></div>
-                        <div class="media-body position-relative ml-4 ml-sm-5"><span class="process-devider border-left-0 r-0"></span>
-                            <h5 class="ls-1 text-white"> <span class="bg-black pr-3">Design</span></h5>
-                            <p class="mb-0" data1-zanim-xs='{"from":{"opacity":0},"to":{"opacity":1},"duration":1,"delay":0.4}'>Once the solution is identified for the brand, we then design the strategy using the MAGSMEN BMS approach and BCB appraoch to find out the brand centric strategy</p>
-                        </div>
-                    </div>
-                      <div class="media process-item border-dashed-left border-600 border-md-left-0 border-md-dashed-right pb-5" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="media-body position-relative ml-4 ml-sm-5 ml-md-0 mr-md-5">
-                            <h5 class="text-md-right text-white"> <span class="bg-black pl-md-3">Direct</span><span class="process-devider border-right-0 l-0"></span></h5>
-                            <p class="mb-0 text-md-right" data1-zanim-xs='{"from":{"opacity":0},"to":{"opacity":1},"duration":1,"delay":0.3}'>Now the strategy is designed, we identify the platforms to get it right, Not all businesses are digital and not all are traditional, we sit with the client, explain them the approach and then execute</p>
-                        </div>
-                        <div class="process-icon-circle"><img class="process-icon" src="assets/img/line-icons/web-programming.svg" alt="" /></div>
-                    </div>
-                    <div class="media process-item  border-600 pb-5" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="process-icon-circle"><img class="process-icon" src="assets/img/line-icons/technical-support.svg" alt="" /></div>
-                        <div class="media-body position-relative ml-4 ml-sm-5"><span class="process-devider border-left-0 r-0"></span>
-                            <h5 class="ls-1 text-white"> <span class="bg-black pr-3">Deliver</span></h5>
-                            <p class="mb-0" data1-zanim-xs='{"from":{"opacity":0},"to":{"opacity":1},"duration":1,"delay":0.4}'>Well, success takes time and so as results, but, the client-specific strategies we build never failed to bring results. Get ready to experience the whole new level of your brand</p>
-                        </div>
-                    </div>
-
-                   <!--  <div class="media process-item" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                        <div class="media-body position-relative ml-4 ml-sm-5 ml-md-0 mr-md-5">
-                            <h5 class="text-md-right text-white"> <span class="bg-black pl-md-3">Deliver</span><span class="process-devider border-right-0 l-0"></span></h5>
-                            <p class="mb-0 text-md-right" data1-zanim-xs='{"from":{"opacity":0},"to":{"opacity":1},"duration":1,"delay":0.5}'>Well, success takes time and so as results, but, the client-specific strategies we build never failed to bring results. Get ready to experience the whole new level of your brand</p>
-                        </div>
-                        <div class="process-icon-circle"><img class="process-icon" src="assets/img/line-icons/server.svg" alt="" /></div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <!-- end of .container-->
-    </section>
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
-
-    <section class="site-section" id="next-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <a data-fancybox data-ratio="2" href="./videos/magsmenmp4 .mp4" class="block__96788">
-                        <span class="play-icon"><span class="icon-play"></span></span>
-                        <img src="images/videoimg.jpg" alt="Image" class="img-fluid img-shadow">
-                    </a>
-                </div>
-                <div class="col-lg-5 ml-auto">
-                    <h3 class="section-title-sub ">Watch the video</h3>
-                    <h2 class="section-title mb-3">Lets Build Your Stories</h2>
-                   
-                                <p class="ls-0 mb-0 text-left">
-                                    MARKETING
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-
-                                    AUDIT & ADVERTISING
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-                                    GROWTH
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-
-                                    STRATEGY
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-                                    MULTI CHANNEL DESIGN
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left">
-                                    ENGAGEMENT
-
-                                </p>
-                                <p class="ls-0 mb-0 text-left"> NOTABLE ACHIEVEMENTS
-                                </p>
-                               
 
             </div>
         </div>
-    </section>
+
+    </section> <!-- end s-contact -->
 
 
 
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class="py-6" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-        <div class="bg-holder overlay" style="background-image:url(assets/img/backgrounds/newsletter-bg.jpg);background-position: 63% 26%;"></div>
-        <!--/.bg-holder-->
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-4 text-md-right mb-2 mb-md-0">
-                    <div class="row no-gutters align-items-center justify-content-md-end border-md-right">
-                        <div class="col-auto pl-2 pl-md-0 pr-2 text-lg-right order-1 order-md-0">
-                            <h3 class="text-white d-inline-block fs-4 mb-0 lh-1 mt-1" data1-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.2}'>Subscribe</h3>
-                            <p class="mb-0 text-white" data1-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.3}'>To join our newsletter</p>
-                        </div>
-                        <div class="col-auto pl-lg-1 pr-md-4 pr-lg-3 pr-xl-4 order-0 order-md-1" data1-zanim-xs='{"from":{"opacity":1,"x":-30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'><img class="opacity-75" src="assets/img/line-icons/mail-4.svg" width="65" style="margin-top: 0px;" alt="" /></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-8 col-xl-6 pl-lg-0 px-xl-3">
-                    <form data1-zanim-xs='{"from":{"opacity":1,"x":30},"to":{"opacity":1,"x":0},"duration":1.5,"delay":0.1}'>
-                        <div class="floating-label-group floating-label-group-lg mb-0"><input class="floating-label-input border-0 form-control form-control-lg" id="email" type="email" placeholder="Your Email" required="required" /><label class="floating-label" for="email">Your Email</label></div>
-                    </form>
-                </div>
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full ss-copyright">
+                <span>© Copyright Magsmen 2020</span>
             </div>
         </div>
-        <!-- end of .container-->
-    </section>
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">Back to Top</a>
+        </div>
+    </footer>
 
 
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
 
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center mb-4" data1-zanim-timeline="{}" data1-zanim-trigger="scroll">
-                    <div class="overflow-hidden">
-                        <h2 class="fs-md-5" data1-zanim-xs='{"duration":1.5,"delay":0}'>Lets Build Your Brand Today</h2>
-                    </div>
-                    <div class="overflow-hidden">
-                        <p class="fs--1 text-uppercase text-white ls-0 mb-0" data1-zanim-xs='{"duration":1.5,"delay":0.1}'>We exist to ignite passionate brands, and would love to help your brand make a lasting impact. Your Business is your second love, let’s make it more sweeter and smoother. So, Ready to get started? Oh ho! Got more doubts, fill in the contact form and we’ ll be in touch with you shortly</p>
-                    </div>
-                    <div class="overflow-hidden">
-                        <hr class="hr-short border-black" data1-zanim-xs='{"duration":1.5,"delay":0.2}' />
-                    </div>
-                </div>
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-6 mb-5 mb-lg-0 d-flex flex-column justify-content-between">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="mb-3">Connect With Us</h5>
-                        </div>
-                        <div class="col-auto mb-2 mb-sm-0" style="width: 190px">
-                            <div class="row">
-                                <div class="col-1"><span class="fas fa-location-arrow text-700"></span></div>
-                                <div class="col px-2">
-                                    <!-- <p class="mb-1 text-700"><strong>MAGSMEN</strong></p> -->
-                                    <p class="mb-0 text-600">5-37-163
-                                        4/13 Brodipet,S & S Chambers opp Singapore plaza
-                                     <br />Gntur, 522002,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto" style="width: 205px">
-                            <div class="row mb-2 mb-sm-1">
-                                <div class="col-1"><span class="fas fa-phone mr-2 text-700"> </span></div>
-                                <div class="col px-2"><a class="text-600" href="tel:9703356332">9703356332 </a></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-1"><span class="fas fa-envelope mr-2 text-700"></span></div>
-                                <div class="col px-2"><a class="text-600" href="mailto:growth@magsmen.in">growth@magsmen.in</a></div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="googlemap rounded theme-map mt-4">
-                        <div style="width: 100% ; border-radius: 20% !important;"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ananthavarapadu%20rod,%20etukuru,%20guntur+(MAGSMEN)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                            <a href="https://www.maps.ie/map-my-route/">Measure walking route distance</a>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <!-- <h5 class="mb-3">Feel free to drop us a line!</h5> -->
-                    <div class="col-seven tab-full animate-this">
-
-                        <h5>Send Us A Message</h5>
-                        <div>
-                            <h1>GET</h1>
-                            <h1>IN</h1>
-                            <h1>TOUCH ON</h1>
-                            <h1>WHATSAPP</h1>
-                            <h1>RIGHT AWAY</h1>
-           
-
-                        </div>
-                        <div id="myButton"></div>
-                        <div class="form-field">
-                           
-                           
-                        </div>
-                    <!-- <form class="zform text-left" method="post"><input type="hidden" name="to" value="username@domain.extension" />
-                        <div class="form-group mb-3"><input class="fs-0 form-control" type="text" placeholder="Your Name" required="required" /></div>
-                        <div class="form-group mb-3"><input class="fs-0 form-control" type="email" placeholder="Email Address" required="required" /></div>
-                        <div class="form-group mb-3"><textarea class="fs-0 form-control contact-message" rows="8" placeholder="Type your message here" required="required"></textarea></div>
-                        <div class="form-feedback my-2"></div><input class="btn btn-block btn-light hvr-sweep-top" type="submit" value="Give us a shot">
-                    </form> -->
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
                 </div>
             </div>
+
         </div>
-        <!-- end of .container-->
-    </section>
-    <!-- <section> close ============================-->
-         <!--<social media icons-->
-           <section class="bg-1100 py-6 px-3 px-lg-0">
-            <div>
-                <h1 class="middle">We are Everywhere,Check out us!</h1>
-              </div>
-           </section>
-            <section class="bg-1100 py-6 px-3 px-lg-0">
-              <!-- <div>
-                <h1 class="middle">We are Everywhere,Check out us!</h1>
-              </div> -->
-                <div class="middle">
-                    <a class="btn" href="https://www.facebook.com/magsmenindia">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="btn" href="https://www.linkedin.com/company/magsmen/?viewAsMember=true">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <!-- <a class="btn" href="#">
-                      <i class="fab fa-google"></i>
-                    </a> -->
-                    <a class="btn" href="https://www.instagram.com/magsmenindia/">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <!-- <a class="btn" href="#">
-                      <i class="fab fa-youtube"></i>
-                    </a> -->
-                  </div>
-              
-            </section>
-    <!-- ============================================-->
+
+    </div> <!-- end photoSwipe background -->
 
 
+    <!-- Java Script
+    ================================================== -->
+    <script src="./whatsapp/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./whatsapp/floating-wpp.js"></script>
 
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class="bg-1100 py-6 px-3 px-lg-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pr-lg-4 mb-4 mb-lg-0">
-                    <h5 class="text-white mb-3">Our Mission</h5>
-                    <p class="text-700">
-                        To help the brands become bigger and better To help the brands succeed in the competitive market To redefine the meaning of branding</p>
-                    <!-- <ul class="list-inline mb-0">
-                        <li class="list-inline-item mr-0"><a class="text-900 hover-color-white pr-2" href="#!"><span class="fab fa-facebook-f"></span></a></li>
-                        <li class="list-inline-item mr-0"><a class="text-900 hover-color-white px-2" href="#!"><span class="fab fa-twitter"></span></a></li>
-                        <li class="list-inline-item mr-0"><a class="text-900 hover-color-white px-2" href="#!"><span class="fab fa-linkedin-in"></span></a></li>
-                        <li class="list-inline-item mr-0"><a class="text-900 hover-color-white px-2" href="#!"><span class="fab fa-google-plus-g"></span></a></li>
-                    </ul> -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-6 col-md-3 pl-lg-4 mb-4 mb-lg-0">
-                            <h5 class="text-white mb-3">Company</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-1"><a class="text-700 hover-color-white" href="#home">Home</a></li>
-                                <li class="mb-1"><a class="text-700 hover-color-white" href="#whyus">Why us</a> </li>
-                                <li class="mb-1"><a class="text-700 hover-color-white" href="#about-us">About us</a></li>
-                                <li class="mb-1"><a class="text-700 hover-color-white" href="#services">Services</a></li>
-                                <li class="mb-1"><a class="text-700 hover-color-white" href="#contact">Contact</a></li>
-
-                            </ul>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of .container-->
-    </section>
-    <!-- <section> close ============================-->
-        <!--<social media icons-->
-            <!-- <section class="bg-1100 py-6 px-3 px-lg-0">
-                <div class="middle">
-                    <a class="btn" href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="btn" href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="btn" href="#">
-                      <i class="fab fa-google"></i>
-                    </a>
-                    <a class="btn" href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="btn" href="#">
-                      <i class="fab fa-youtube"></i>
-                    </a>
-                  </div>
-              
-            </section> -->
-    <!-- ============================================-->
-
-    </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
-
-
-
-    <!--===============================================-->
-    <!--    Footer-->
-    <!--===============================================-->
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class="text-center bg-black py-3">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-12 col-md-auto mb-1 mb-md-0">
-                    <p class="mb-0">MAGSMEN &copy;
-
-                        <span class="mx-2"><script type="text/javascript">var year = new Date();document.write(" "+year.getFullYear());</script></span></p>
-                </div>
-
-            </div>
-        </div>
-        <!-- end of .container-->
-    </section>
-    <!-- <section> close ============================-->
-
-    <!-- <footer class="site-footer slanted-footer">
-
-            <a href="#top" class="smoothscroll scroll-top">
-                <span class="icon-keyboard_arrow_up"></span>
-            </a>
-
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-6 col-md-3 mb-4 mb-md-0">
-                        <h3>Scenic Products</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Web Developers</a></li>
-                            <li><a href="#">Resources</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-3 mb-4 mb-md-0">
-                        <h3>Company</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Resources</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-3 mb-4 mb-md-0">
-                        <h3>Support</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-3 mb-4 mb-md-0">
-                        <h3>Contact Us</h3>
-                        <div class="footer-social">
-                            <a href="#"><span class="icon-facebook"></span></a>
-                            <a href="#"><span class="icon-twitter"></span></a>
-                            <a href="#"><span class="icon-instagram"></span></a>
-                            <a href="#"><span class="icon-linkedin"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row text-center">
-                    <div class="col-12">
-                        <p class="copyright"><small class="block">
-           
-        </p>
-    </div>
-    </div>
-    </div>
-    </footer> -->
-
-    </div>
-
-    <!-- SCRIPTS -->
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <script src="whatsapp/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/stickyfill.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="whatsapp/floating-wpp.js"></script>
-
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-
-    <script src="js/custom.js"></script>
-
-    <script type="">
-		
-	</script>
-	
 </body>
-
-</html>
