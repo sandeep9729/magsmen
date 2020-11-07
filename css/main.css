@@ -1182,6 +1182,10 @@ input::-moz-focus-inner {
  *  </aside>
  *
  * --------------------------------------------------------------------- */
+.ini-letter {
+  color: white;
+}
+
 .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
@@ -1436,6 +1440,10 @@ body.menu-is-open {
 
 .lighter {
   background-color: white;
+}
+
+.black-bg {
+  background-color: black;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1798,7 +1806,7 @@ body.menu-is-open {
   content: "";
   display: block;
   height: 1px;
-  width: 110px;
+  width: 60px;
   background-color: #793ea5;
   position: absolute;
   top: 50%;
@@ -3869,7 +3877,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-contact .subhead {
-  color: #2a1538;
+  color: #793ea5;
 }
 
 .s-contact .section-header,
