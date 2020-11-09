@@ -48,7 +48,7 @@
     height: 0px;
     bottom: 0;
     opacity: 0;
-    transition: bottom 0.1s ease-out, opacity 0.2s ease-out;
+    /* transition: bottom 0.1s ease-out, opacity 0.2s ease-out; */
     transform-origin: bottom;
 }
 

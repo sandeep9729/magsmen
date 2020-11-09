@@ -100,6 +100,7 @@
             $header.click(function () {
                 $popup.removeClass('active');
             });
+            
 
             $textarea.keypress(function (event) {
                 settings.message = $(this).val();

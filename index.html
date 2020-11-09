@@ -46,8 +46,9 @@
             padding: 0 12px 12px 12px;
             width: 230px;
             height: auto;
-            bottom: 82px;
+            bottom: auto;
             opacity: 1;
+            right: 30%;
 
         }
 
@@ -146,8 +147,10 @@
                 padding: 0 12px 12px 12px;
                 width: 210px;
                 height: auto;
-                bottom: 82px;
+                bottom: auto;
+                top: auto;
                 opacity: 1;
+                right: 80px;
 
             }
 
@@ -217,6 +220,11 @@ and (orientation : landscape) {
                 margin-bottom: 10px;
             }
         }
+.header-brand-logo{
+    right: auto;
+    top: 50px;
+    height: 60px;
+}
     </style>
 </head>
 
@@ -247,7 +255,7 @@ and (orientation : landscape) {
     ================================================== -->
     <header class="s-header">
 
-        <div class="header-logo">
+        <div class="header-logo header-menu-toggle header-brand-logo">
             <a class="site-logo" href="index.html">
                 <img class="site-icon" src="images/magsmen-logo.png" alt="Homepage">
             </a>
@@ -384,15 +392,15 @@ and (orientation : landscape) {
         <div class="row bit-narrow" data-aos="fade-up">
             <div class="col-full">
                 <p class="lead">
-                    Every Business desires to build a better market and increase their market share in their respective
-                    industries. In the world of fast-evolving businesses, Branding has become a significant resource for
-                    the businesses to compete in the Market.
+                    Magsmen is the finest Brand consulting firm in guntur,designed to formulate the strategies for the existing businesses to compete in this hyper competitive global business market. 
+                    We are specialised in concept development, Brand creation, Brand strategy, Digital marketing and many more.
                 </p>
                 <p class="lead">
-                    MAGSMEN, is a brand consulting firm, which is designed to formulate the strategies for the existing
-                    businesses to compete in this hyper competitive global business market. We at MAGSMEN, initially,
-                    conduct the Brand Audit for the business, discuss the current or existing business performance with
-                    the client using the THE MAGSMEN’s Approach.
+                    We use our creativity to come up with the right concept, idea or that gorgeous design. 
+                    Our creative team includes graphic designers who can design and produce brand specific assets and marketing materials.
+                </p>
+                <p class="lead">
+                    All of our creative work is supported with clear, rational and logical executions. Creative, but we always keep a clear eye on our clients strategy, goals, feasibility and return on investment.
                 </p>
             </div>
         </div> <!-- end about-desc -->
@@ -540,7 +548,7 @@ and (orientation : landscape) {
                         </div>
                         <p class="brand-title">Content</p>
                         <p class="brand-desc">
-                            Content often palys a very important role for any brand, the world is changing so as the customers. With each passing day, the importance of smart content is placing a huge role in customer engagement. The quality of the content will percieve the brand. It has to be engaging, informative and helpful not boastful, promotional or keyword ridden.
+                            Content often plays a very important role for any brand, the world is changing so as the customers. With each passing day, the importance of smart content is placing a huge role in customer engagement. The quality of the content will percieve the brand. It has to be engaging, informative and helpful not boastful, promotional or keyword ridden.
                         </p>
                       </div>
                       <div class="flip-box-back">
@@ -595,7 +603,7 @@ and (orientation : landscape) {
             <div class="col-full">
                 <h3 class="subhead">Our 5D's Approach</h3>
                 <h1 class="display-1">
-                    Coz every story building has a process
+                    Coz, every story building has a process
                 </h1>
             </div>
         </div> <!-- end section-header -->
@@ -739,13 +747,39 @@ and (orientation : landscape) {
 
                     </div>
                 </div> <!-- end masonry__brick -->
+                
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
 
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/myratz.jpg" class="thumb-link" title="Myratz"
+                                data-size="1050x700">
+                                <img src="images/portfolio/gallery/myratz.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Myratz
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                    </div>
+                </div> 
             </div> <!-- end masonry -->
 
         </div> <!-- end masonry-wrap -->
 
     </section> <!-- end s-works -->
 
+    
     <!-- about
     ================================================== -->
     <section class="s-video target-section">
@@ -756,8 +790,9 @@ and (orientation : landscape) {
                 <div class="bg-holder-2">
                     <div class="bg-video-2">
                         <video width="700px" style="max-width: 100%; height: auto;" autoplay muted loop>
-                            <source src="./assets/do_not_blink.m4v" type="video/mp4">
-                        </video> </div>
+                            <source src="./assets/Magsmen kinetic2.mp4" type="video/mp4">
+                        </video>
+                    </div>
 
                 </div>
             </div>
@@ -889,16 +924,20 @@ and (orientation : landscape) {
 
         <div class="row section-header narrow" >
             <div class="col-full">
-                <h3 class="subhead">Keep In Touch</h3>
+                <h3 class="subhead">Ready to get Started !</h3>
                 <h2 class="display-2">Feel free to contact us for any <br> Project idea or collaboration</h2>
             </div>
         </div> <!-- end section-header -->
-
         <div class="row contact-main" >
             <div class="col-full">
-                <p class="contact-email">
-                    <a href="mailto:gmail.com">growth@magsmen.in</a>
-                </p>
+                <h2 class="display-2">Get in touch on whatsapp right away</h2>
+                <div id="myButton" style="margin: auto; padding-top: 10px; display: inline-table;"></div>
+                
+                <div class="form-field">
+        
+        
+                </div>
+               
                 <p class="contact-address">
                     8-215-5, Ananthavarapadu Road <br>
                     Etukuru, Guntur <br>
@@ -907,7 +946,9 @@ and (orientation : landscape) {
                 <p class="contact-numbers">
                     +91 9044910449
                 </p>
-
+                <p class="contact-email">
+                    <a href="mailto:gmail.com">growth@magsmen.in</a>
+                </p>
                 <ul class="contact-social">
                     <li>
                         <a href="https://www.facebook.com/magsmenindia" target="_blank"><i class="fab fa-facebook-f"
@@ -927,15 +968,7 @@ and (orientation : landscape) {
                     </li>
                    
                 </ul>
-
-                <h2 class="display-2">Get in touch on whatsapp right away</h2>
-
-                <div id="myButton" style="margin: auto; padding-top: 10px; display: inline-table;"></div>
-                <div class="form-field">
-
-
-                </div>
-
+                
             </div>
         </div>
 
@@ -1007,6 +1040,4 @@ and (orientation : landscape) {
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="./whatsapp/floating-wpp.js"></script>
-  
-
 </body>
