@@ -86,6 +86,20 @@ body {
   padding: 0;
 }
 
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.226)
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */

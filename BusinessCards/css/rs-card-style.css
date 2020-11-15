@@ -2993,10 +2993,10 @@ body {
     display: block;
 }
 
-.loading .wrapper {
+/* .loading .wrapper {
     opacity: 0;
     visibility: hidden;
-}
+} */
 
 #preloader {
     display: none;
