@@ -100,7 +100,7 @@ if( captchaElements.length > 0 ){
 			Email.send({ 
 				Secure: '7b555c7b-5c30-420f-a11e-4d0bff4d65db',
 				To: email_to, 
-				From: email, 
+				From: email.val(), 
 				Subject: subject.val(), 
 				Body: message.val(), 
 			  }) 
