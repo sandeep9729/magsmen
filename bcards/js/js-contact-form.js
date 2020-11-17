@@ -61,9 +61,8 @@ if( captchaElements.length > 0 ){
 		var message = contact_form.find('.contact-message');
 		var contact_form_response = contact_form.find('.contact-response');	
 		var subject = contact_form.find('.contact-subject');
-		var privacy = contact_form.find('#rsPivacyPolicy');
-		var g_recaptcha_response = contact_form.find('.g-recaptcha-response');
-		var email_to = 'psandeepnamburu@gmail.com';
+		var email_to = 'prathapkumar.bobby@gmail.com';
+		
 		if(contact_form.find('.email_to').length > 0){
 			email_to = contact_form.find('.email_to').val();
 		}
@@ -93,25 +92,21 @@ if( captchaElements.length > 0 ){
 		}
 		if( !errors ) {
 			contact_form.serialize(),
-			jQuery.post(
-				ajax_var.url,
-				{
-					action : 'rs_card_contact_form',
-					name: name.val(),
-					email: email.val(),
-					message: message.val(),
-					subject: subject.val(),
-					email_to: email_to,
-					g_recaptcha_response: g_recaptcha_response.val()
-				},
-				function(data){
-					contact_form_response.html(data);
-					contact_form.each(function(){
-						this.reset();
-					});
-				},
-				"html"
-			);
+			console.log(email.val())
+			console.log(email_to)
+			console.log(subject.val())
+			console.log(message.val())
+			console.log(email.val())
+			Email.send({ 
+				Secure: '7b555c7b-5c30-420f-a11e-4d0bff4d65db',
+				To: email_to, 
+				From: email, 
+				Subject: subject.val(), 
+				Body: message.val(), 
+			  }) 
+				.then(function (message) { 
+				  alert("mail sent successfully") 
+				}); 
 		}
 		
 		return false;
