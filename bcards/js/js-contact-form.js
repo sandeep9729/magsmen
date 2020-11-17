@@ -63,7 +63,7 @@ if( captchaElements.length > 0 ){
 		var subject = contact_form.find('.contact-subject');
 		var privacy = contact_form.find('#rsPivacyPolicy');
 		var g_recaptcha_response = contact_form.find('.g-recaptcha-response');
-		var email_to = '';
+		var email_to = 'psandeepnamburu@gmail.com';
 		if(contact_form.find('.email_to').length > 0){
 			email_to = contact_form.find('.email_to').val();
 		}
@@ -72,12 +72,12 @@ if( captchaElements.length > 0 ){
 		contact_form_items.removeClass('error');
 		errors = false;
 		
-		if( privacy.length > 0 ){
-			if(!privacy.prop('checked')) {
-				errors = true;
-				privacy.parent().addClass('error');
-			}
-		}        
+		// if( privacy.length > 0 ){
+		// 	if(!privacy.prop('checked')) {
+		// 		errors = true;
+		// 		privacy.parent().addClass('error');
+		// 	}
+		// }        
 
 		if (name.val()  === '') {
 			errors = true;
