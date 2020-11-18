@@ -1,4 +1,4 @@
 <?php
-$data = $_POST['data'];
-print_r($data);
+//$data = $_POST['data'];
+print_r("I an calling...");
 ?>
