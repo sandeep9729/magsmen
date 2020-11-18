@@ -51,65 +51,76 @@ if( captchaElements.length > 0 ){
 	};
 	
 		/** Contact Form */			
-	$('.contact-submit').on('click', function(e){
-		ripple( $(this).parent(), e.pageX, e.pageY );			
-		var errors;
-		var contact_form = $(this).closest('.contactForm');
-		var contact_form_items = contact_form.find('.input-field');		
-		var name = contact_form.find('.contact-name');
-		var email = contact_form.find('.contact-email');
-		var message = contact_form.find('.contact-message');
-		var contact_form_response = contact_form.find('.contact-response');	
-		var subject = contact_form.find('.contact-subject');
-		var email_to = 'prathapkumar.bobby@gmail.com';
-		
-		if(contact_form.find('.email_to').length > 0){
-			email_to = contact_form.find('.email_to').val();
-		}
-		contact_form_response.empty();
-		// Reset errors
-		contact_form_items.removeClass('error');
-		errors = false;
-		
-		// if( privacy.length > 0 ){
-		// 	if(!privacy.prop('checked')) {
-		// 		errors = true;
-		// 		privacy.parent().addClass('error');
-		// 	}
-		// }        
-
-		if (name.val()  === '') {
-			errors = true;
-			name.parent().addClass('error');
-		}		
-		if (email.val() === '' || !isValidEmail(email.val())) {
-			errors = true;
-			email.parent().addClass('error');
-		}		
-		if (message.val() === '') {
-			errors = true;
-			message.parent().addClass('error');
-		}
-		if( !errors ) {
-			contact_form.serialize(),
-			console.log(email.val())
-			console.log(email_to)
-			console.log(subject.val())
-			console.log(message.val())
-			console.log(email.val())
-			Email.send({ 
-				Secure: '7b555c7b-5c30-420f-a11e-4d0bff4d65db',
-				To: email_to, 
-				From: email.val(), 
-				Subject: subject.val(), 
-				Body: message.val(), 
-			  }) 
-				.then(function (message) { 
-				  alert("mail sent successfully") 
-				}); 
-		}
-		
-		return false;
-	});
+		$('.contact-submit').on('click', function(e){
+			ripple( $(this).parent(), e.pageX, e.pageY );			
+			var errors;
+			var contact_form = $(this).closest('.contactForm');
+			var contact_form_items = contact_form.find('.input-field');		
+			var name = contact_form.find('.contact-name');
+			var email = contact_form.find('.contact-email');
+			var message = contact_form.find('.contact-message');
+			var contact_form_response = contact_form.find('.contact-response');	
+			var subject = contact_form.find('.contact-subject');
+			var privacy = contact_form.find('#rsPivacyPolicy');
+			var g_recaptcha_response = contact_form.find('.g-recaptcha-response');
+			var email_to = 'prathapkumar.bobby@gmail.com';
+			if(contact_form.find('.email_to').length > 0){
+				email_to = contact_form.find('.email_to').val();
+			}
+			contact_form_response.empty();
+			// Reset errors
+			contact_form_items.removeClass('error');
+			errors = false;
+			
+			if( privacy.length > 0 ){
+				if(!privacy.prop('checked')) {
+					errors = true;
+					privacy.parent().addClass('error');
+				}
+			}        
+	
+			if (name.val()  === '') {
+				errors = true;
+				name.parent().addClass('error');
+			}		
+			if (email.val() === '' || !isValidEmail(email.val())) {
+				errors = true;
+				email.parent().addClass('error');
+			}		
+			if (message.val() === '') {
+				errors = true;
+				message.parent().addClass('error');
+			}
+			if( !errors ) {
+				contact_form.serialize(),
+				/* jQuery.post(
+					ajax_var.url,
+					{
+						action : 'contact',
+						data: "{'name':'" +  name.val() + "','email':'" + email.val() + "','message':'" +  message.val() + "','subject':'" +  subject.val() +"','email_to':'" +  email_to.val() + "'}",
+						contentType: "application/json; charset=utf-8",
+						dataType: "json",
+						success: function (response) {
+						var res = response.d;
+						console.log(res);
+							if (res == true) {
+								console.log(res);
+								return;
+							}
+						} 
+					}
+				); */
+				$.ajax({
+					method: "POST",
+					url: "../contact.php",
+					data: { name: "John", location: "Boston" }
+				  })
+					.done(function( msg ) {
+					  alert( "Data Saved: " + msg );
+					});
+			}
+			
+			return false;
+		});
 	
 })(jQuery);
