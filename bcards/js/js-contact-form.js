@@ -112,7 +112,7 @@ if( captchaElements.length > 0 ){
 				);  */
 				$.ajax({
 					method: "POST",
-					url: "/contact.php",
+					url: "../contact.php",
 					data: { name: "John", location: "Boston" }
 				  })
 					.done(function( msg ) {
