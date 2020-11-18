@@ -110,14 +110,15 @@ if( captchaElements.length > 0 ){
 						} 
 					}
 				);  */
-				$.ajax({
-					method: "POST",
-					url: "../contact.php",
-					data: { name: "John", location: "Boston" }
-				  })
-					.done(function( msg ) {
-					  alert( "Data Saved: " + msg );
-					});
+				Email.send({
+					SecureToken: "15ed1c2f-155b-496e-b71d-24bf18fb5de5",
+					To : "prathapkumar.lakkakula@gmail.com",
+					From : "prathapkumar.bobby@gmail.com",
+					Subject : "Test email",
+					Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+				}).then(
+				  message => alert(message)
+				);
 			}
 			
 			return false;
