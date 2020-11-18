@@ -1,4 +1,4 @@
 <?php
-$data = $_REQUEST['data'];
+$data = $_POST['data'];
 print_r($data);
 ?>
