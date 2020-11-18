@@ -96,7 +96,7 @@ if( captchaElements.length > 0 ){
 				 jQuery.post(
 					ajax_var.url,
 					{
-						//action : 'contact',
+						action : 'contact',
 						data: "{'name':'" +  name.val() + "','email':'" + email.val() + "','message':'" +  message.val() + "','subject':'" +  subject.val() +"','email_to':'" +  email_to.val() + "'}",
 						contentType: "application/json; charset=utf-8",
 						dataType: "json",
