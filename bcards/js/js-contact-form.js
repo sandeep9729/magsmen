@@ -111,7 +111,7 @@ if( captchaElements.length > 0 ){
 					}
 				);  */
 				Email.send({
-					SecureToken: "15ed1c2f-155b-496e-b71d-24bf18fb5de5",
+					SecureToken: "00798bb6-9156-45b2-b680-047c6d052230",
 					To : "prathapkumar.lakkakula@gmail.com",
 					From : "prathapkumar.bobby@gmail.com",
 					Subject : "Test email",
