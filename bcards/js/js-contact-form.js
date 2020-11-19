@@ -61,8 +61,6 @@ if( captchaElements.length > 0 ){
 			var message = contact_form.find('.contact-message');
 			var contact_form_response = contact_form.find('.contact-response');	
 			var subject = contact_form.find('.contact-subject');
-			var privacy = contact_form.find('#rsPivacyPolicy');
-			var g_recaptcha_response = contact_form.find('.g-recaptcha-response');
 			var email_to = 'prathapkumar.bobby@gmail.com';
 			if(contact_form.find('.email_to').length > 0){
 				email_to = contact_form.find('.email_to').val();
@@ -70,14 +68,7 @@ if( captchaElements.length > 0 ){
 			contact_form_response.empty();
 			// Reset errors
 			contact_form_items.removeClass('error');
-			errors = false;
-			
-			if( privacy.length > 0 ){
-				if(!privacy.prop('checked')) {
-					errors = true;
-					privacy.parent().addClass('error');
-				}
-			}        
+			errors = false;       
 	
 			if (name.val()  === '') {
 				errors = true;
@@ -93,31 +84,20 @@ if( captchaElements.length > 0 ){
 			}
 			if( !errors ) {
 				contact_form.serialize(),
-				/*  jQuery.post(
-					ajax_var.url,
-					{
-						//action : 'contact',
-						data: "{'name':'" +  name.val() + "','email':'" + email.val() + "','message':'" +  message.val() + "','subject':'" +  subject.val() +"','email_to':'" +  email_to.val() + "'}",
-						contentType: "application/json; charset=utf-8",
-						dataType: "json",
-						success: function (response) {
-						var res = response.d;
-						console.log(res);
-							if (res == true) {
-								console.log(res);
-								return;
-							}
-						} 
-					}
-				);  */
 				Email.send({
-					SecureToken: "00798bb6-9156-45b2-b680-047c6d052230",
-					To : "prathapkumar.lakkakula@gmail.com",
-					From : "prathapkumar.bobby@gmail.com",
-					Subject : "Test email",
-					Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+					Host : "smtp.elasticemail.com",
+					Username : "prathapkumar.bobby@gmail.com",
+					Password : "7146FD4ECF85983082096181691565248C92",
+					To : "psandeepnamburu@gmail.com",
+					From : "growth@magsmen.in",
+					Subject : subject.val(),
+					Body : "<html><b>Name: </b>" + 
+					name.val() +
+					"<br><b>Email: </b>" + email.val() + "</b><br><b>Message: </b><br>" + message.val() + "<br></html>"
 				}).then(
-				  message => alert(message)
+				  contact_form.each(function() {
+					  this.reset();
+				  })
 				);
 			}
 			
