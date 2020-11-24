@@ -1,0 +1,115 @@
+body,
+select,
+textarea,
+input[type='tel'],
+input[type='text'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+.btn,
+.filter button,
+.nav-wrap .nav a,
+.mobile-nav .nav a {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.logo,
+.site-title {
+    font-family: "Fredoka One";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
+    font-family: 'proxima-nova', sans-serif;
+}
+.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+.woocommerce-product-gallery{ opacity: 1 !important; }
+.head-bg:before {
+    background-color: rgba(44, 51, 64, 0.8);
+}
+.bgGray {
+    background-color: #121212 !important;
+}
+.bgWhite {
+    background-color: #ffffff !important;
+}
+.txtWhite{
+    color: #ffffff;
+}
+.theme-color-e8676b .timeline-box-inner {
+    border-color: #3d4451;
+}
+.service-cont hr{
+    background-color: #3d4451;
+}
+.theme-color-e8676b .timeline-box .dot{
+    background-color: #ffffff;
+}
+.theme-color-e8676b .timeline-bar{
+    background-color: #ffffff;
+}
+.theme-color-e8676b .filter-bar .filter-bar-line{
+    background-color: #ffffff;
+}
+.theme-color-e8676b .head-cont .btn-mobile{
+    color: black;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.header-has-img .head-sticky.head-bar{
+    background-color: black;
+}
+.head-sticky.head-bar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
+}
+.theme-color-e8676b .head-nav .nav>ul>li>a:after{
+    background-color: #ffffff;
+}
+.client-img {
+    height: 120px;
+}
+.header-has-img .head-sticky .head-nav .nav>ul>li>a{
+    color: #ffffff;
+}
+
+.concat-us-border{
+    min-height: auto;
+    border-radius: 5px;
+}
+.footer-social{
+    display: block !important;
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+}
+.txtCenter {
+    text-align: center;
+}
+.p-img{
+	height: 370px;
+    width: 410px;
+    
+}
+.p-logo{
+    height: 250px;
+    width: 150px;
+    padding: 0 10px;
+}
+@media screen and (max-width: 767px) {
+    .p-img{
+        height: 150px;
+        width: 150px;
+        margin-bottom: 5px;
+    }
+}

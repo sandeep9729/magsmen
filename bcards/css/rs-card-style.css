@@ -3330,9 +3330,13 @@ body {
 	.head-bar {
         padding-top: 0;
         padding-bottom: 0;
-        position: relative;
+        position: fixed;
+        right: 0;
+        top: 0;
     }
-
+.header{
+    margin-bottom: 0 !important;
+}
     .head-bar-inner .row  > div {
         position: static;
     }
@@ -4456,7 +4460,7 @@ body {
 }
 
 .section-about .profile-info {
-    color: #3d4451;
+    color: #9da0a7;
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #dedede;
@@ -4706,7 +4710,7 @@ body {
     display: block;
     width: 120px;
     float: left;
-    color: #333333;
+    color: #9da0a7;
     font-size: 12px;
     font-weight: 700;
     line-height: 20px;
@@ -4719,7 +4723,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
-    color: #9da0a7;
+    color: rgb(442, 258, 300);
 }
 
 .profile-list .cont a {
