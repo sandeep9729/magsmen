@@ -120,4 +120,9 @@ h6  {
         width: 150px;
         margin-bottom: 5px;
     }
+    .gallery-div {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
