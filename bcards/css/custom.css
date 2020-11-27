@@ -63,6 +63,14 @@ h6  {
 .header-has-img .head-sticky.head-bar{
     background-color: black;
 }
+.gallery-div {
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+}
+.mar-5 {
+    margin: 5px;
+}
 .head-sticky.head-bar{
     top: 0;
     left: 0;

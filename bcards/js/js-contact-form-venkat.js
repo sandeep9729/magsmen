@@ -58,8 +58,8 @@ if( captchaElements.length > 0 ){
 			var contact_form_items = contact_form.find('.input-field');		
 			var name = contact_form.find('.contact-name');
 			var email = contact_form.find('.contact-email');
-			var pnumber = contact_form.find('.contact-phone-number');
 			var message = contact_form.find('.contact-message');
+			var pnumber = contact_form.find('.contact-phone-number');
 			var contact_form_response = contact_form.find('.contact-response');	
 			var subject = contact_form.find('.contact-subject');
 			var email_to = 'prathapkumar.bobby@gmail.com';
@@ -93,12 +93,12 @@ if( captchaElements.length > 0 ){
 					Host : "smtp.elasticemail.com",
 					Username : "prathapkumar.bobby@gmail.com",
 					Password : "7146FD4ECF85983082096181691565248C92",
-					To : "psandeepnamburu@gmail.com",
+					To : "venkatintegrity@gmail.com",
 					From : "growth@magsmen.in",
 					Subject : subject.val(),
 					Body : "<html><b>Name: </b>" + 
 					name.val() +
-					"<br><b>Email: </b>" + email.val() + "</b><br><b>Message: </b><br>" + message.val() + "<br></html>"
+					"<br><b>Email: </b>" + email.val() + "</b><br><b>Phone Number: </b>"+pnumber.val()+"<br><b>Message: </b><br>" + message.val() + "<br></html>"
 				}).then(
 				  contact_form.each(function() {
 					  this.reset();
