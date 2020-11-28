@@ -53,6 +53,7 @@ if( captchaElements.length > 0 ){
 		var pattern = /^(\+?\d{1,4}[\s-])?(?!0+\s+,?$)\d{10}\s*,?$/i;
 		return pattern.test(mobileNumber);
 	};
+	
 		/** Contact Form */			
 		$('.contact-submit').on('click', function(e){
 			ripple( $(this).parent(), e.pageX, e.pageY );			
@@ -81,8 +82,9 @@ if( captchaElements.length > 0 ){
 			if (pnumber.val()  === '' || !isValidMobileNuber(pnumber.val())) {
 				errors = true;
 				pnumber.parent().addClass('error');
-			}			
+			}		
 			if (email.val() === '' || !isValidEmail(email.val())) {
+				alert('Please enter a valid mobile number');
 				errors = true;
 				email.parent().addClass('error');
 			}		
@@ -96,7 +98,7 @@ if( captchaElements.length > 0 ){
 					Host : "smtp.elasticemail.com",
 					Username : "prathapkumar.bobby@gmail.com",
 					Password : "7146FD4ECF85983082096181691565248C92",
-					To : "gowrisankaragencies381@gmail.com",
+					To : "siriasweetworld9@gmail.com",
 					From : "growth@magsmen.in",
 					Subject : subject.val(),
 					Body : "<html><b>Name: </b>" + 
