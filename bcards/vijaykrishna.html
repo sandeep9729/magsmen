@@ -340,35 +340,5 @@ var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File",
 var _wpmejsSettings = {"pluginPath":"\/startuper\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
 /* ]]> */
 </script><script type="text/javascript" src="js/jquery.owlcarousel-owl.carousel.js" id="owl-carousel-js"></script><script type="text/javascript" src="js/jquery.slick-slick.min.js" id="slick-js"></script><script type="text/javascript" src="js/plugins-jquery.smartsticky.js" id="smartsticky-js"></script><script type="text/javascript" src="js/js-wp-embed.min.js" id="wp-embed-js"></script>
-<script>
-	$(document).ready(function(){
-  
-  $("#phoneNumber").on("blur", function(){
-        var mobNum = $(this).val();
-        var filter = /^\d*(?:\.\d{1,2})?$/;
-
-          if (filter.test(mobNum)) {
-            if(mobNum.length==10){
-                  alert("valid");
-              $("#mobile-valid").removeClass("hidden");
-              $("#folio-invalid").addClass("hidden");
-             } else {
-                alert('Please put 10  digit mobile number');
-               $("#folio-invalid").removeClass("hidden");
-               $("#mobile-valid").addClass("hidden");
-                return false;
-              }
-            }
-            else {
-              alert('Not a valid number');
-              $("#folio-invalid").removeClass("hidden");
-              $("#mobile-valid").addClass("hidden");
-              return false;
-           }
-    
-  });
-  
-});
-</script>
 </body>
 </html>
