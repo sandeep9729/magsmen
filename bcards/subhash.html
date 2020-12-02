@@ -12,7 +12,6 @@
 
 <link rel="stylesheet" href="./css/scrollbar.css">
 
-<link rel="stylesheet" href="../whatsapp/floating-wpp.css">
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script type="text/javascript" data-cfasync="false">
@@ -63,7 +62,19 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-
+.header-has-img.home .head-bg{
+	height: 131px !important;
+}
+@media screen and (max-width: 767px) {
+	.floating-wpp .floating-wpp-popup.active {
+    padding: 0 12px 12px 12px;
+    width: 260px;
+    height: auto;
+    bottom: 82px;
+    opacity: 1;
+    right: 50px;
+}
+	}
 </style><link rel="stylesheet" id="wp-block-library-css" href="css/block-library-style.min.css" type="text/css" media="all"><link rel="stylesheet" id="wc-block-vendors-style-css" href="css/build-vendors-style.css" type="text/css" media="all"><link rel="stylesheet" id="wc-block-style-css" href="css/build-style.css" type="text/css" media="all"><style id="woocommerce-inline-inline-css" type="text/css">
 .woocommerce form .form-row .required { visibility: visible; }
 </style><link rel="stylesheet" id="rscard-woocommerce-css" href="css/css-woocommerce.css" type="text/css" media="all"><link rel="stylesheet" id="rscard-woocommerce-layout-css" href="css/css-woocommerce-layout.css" type="text/css" media="all"><link rel="stylesheet" id="rscard-woocommerce-smallscreen-css" href="css/css-woocommerce-smallscreen.css" type="text/css" media="all"><link rel="stylesheet" id="google-font0-css" href="https://fonts.googleapis.com/css?family=Fredoka+One&amp;ver=5.5.3" type="text/css" media="all"><link rel="stylesheet" id="Open Sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&amp;ver=5.5.3" type="text/css" media="all"><link rel="stylesheet" id="Fredoka One-css" href="https://fonts.googleapis.com/css?family=Fredoka+One%3A400&amp;ver=5.5.3" type="text/css" media="all"><link rel="stylesheet" id="icon-fonts-map-css" href="css/css-map-icons.min.css" type="text/css" media="all"><link rel="stylesheet" id="icon-fonts-css" href="css/icomoon-style.css" type="text/css" media="all"><link rel="stylesheet" id="bxslider-css" href="css/jquery.bxslider-jquery.bxslider.css" type="text/css" media="all"><link rel="stylesheet" id="custom-scroll-css" href="css/jquery.customscroll-jquery.mCustomScrollbar.min.css" type="text/css" media="all"><link rel="stylesheet" id="mediaelement-player-css" href="css/jquery.mediaelement-mediaelementplayer.min.css" type="text/css" media="all"><link rel="stylesheet" id="owl-carousel-css" href="css/jquery.owlcarousel-owl.carousel.css" type="text/css" media="all"><link rel="stylesheet" id="owl-carousel-theme-css" href="css/jquery.owlcarousel-owl.theme.css" type="text/css" media="all"><link rel="stylesheet" id="slick-css" href="css/jquery.slick-slick.css" type="text/css" media="all"><link rel="stylesheet" id="rscard-style-css" href="css/rs-card-style.css" type="text/css" media="all"><script type="text/javascript" id="exactmetrics-frontend-script-js-extra">
@@ -82,6 +93,7 @@ var date = {"months":["January","February","March","April","May","June","July","
 <link rel="stylesheet" type="text/css" media="all" href="css/custom.css">
 
 					
+<link rel="stylesheet" href="../whatsapp/floating-wpp.css">
 					</head>
 					<body class="home page-template page-template-page-home page-template-page-home-php page page-id-310 theme-rs-card woocommerce-no-js header-has-img  masthead-fixed loading">
 <div class="mobile-nav">
@@ -93,8 +105,9 @@ var date = {"months":["January","February","March","April","May","June","July","
 <nav class="nav">
 	<ul class="clearfix">
 	<li id="menu-item-468" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#about">About</a></li>
+	<li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#portfolio">Gallery</a></li>
 	
-	<!-- <li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#experience">clients</a></li> -->
+	<li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#experience">Producs we trade</a></li>
 	<li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#contact">Contact</a></li>
 	</ul></nav></div>
 </div>
@@ -108,7 +121,7 @@ var date = {"months":["January","February","March","April","May","June","July","
 </div>
 <div class="wrapper" style="background-color: black;">
 <header class="header">
-<div class="head-bg" style="background-image: url('../bcards/images/cotton-flowers.jpg') !important; height: 130px;"></div>
+<div class="head-bg" style="background-image: url('images/shake\ hand.jpg') !important"></div>
 <div class="head-bar has-woo has-sidebar head-sticky-classic">
 	<div class="head-bar-inner">
 	<div class="row">
@@ -120,6 +133,9 @@ var date = {"months":["January","February","March","April","May","June","July","
 	<div id="head-nav" class="head-nav">
 	<nav class="nav"><ul class="clearfix">
 	<li id="menu-item-468" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#about">About</a></li>
+	<li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#portfolio">Gallery</a></li>
+	<li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home "><a href="#experience">Products we trade</a></li>
+	<!-- <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#services">services</a></li> -->
 	<li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#contact">Contact</a></li>
 	
 	</ul></nav></div>
@@ -137,18 +153,18 @@ var date = {"months":["January","February","March","April","May","June","July","
 <div class="row">
 <div class="col-sm-5">
 <div class="profile-photo">
-<img alt="" src="images/Subbarao.jpg" class="photo"></div>
+<img alt="" src="images/subhash.jpg" class="photo"></div>
 </div>
 <div class="col-sm-7">
 <div class="profile-info">
 <div class="profile-items clearfix">
 </div>
-<h1 class="profile-title" style="color: #ffffff;">Subbarao Namburu</h1>
-<h2 class="profile-position"></h2>M.A., N.I.S</div>
+<h1 class="profile-title" style="color: #ffffff;">Subhash G</h1>
+<h2 class="profile-position"></h2></div>
 <ul class="profile-list">
 	<li class="clearfix">
 		<strong class="title">Company</strong>
-		<span class="cont">Jaya Cotton Products</span>
+		<span class="cont">Nikith Marketing</span>
 	</li>
 <li class="clearfix">
 <strong class="title">Designation</strong>
@@ -156,94 +172,184 @@ var date = {"months":["January","February","March","April","May","June","July","
 </li>
 <li class="clearfix">
 	<strong class="title">Phone</strong>
-	<span class="cont">+91-9848132498</span>
+	<span class="cont">+91-8500698699</span>
 	</li>
 <li class="clearfix">
 <strong class="title">E-mail</strong>
-<span class="cont">
-	<a  class="__cf_email__" >sraonamburu@gmail.com</a><br>
-	<a class="__cf_email__">jayacottonproducts@gmail.com</a>
-</span>
+<span class="cont"><a  class="__cf_email__" >nikithmarketing@gmail.com</a></span>
 </li>
 <li class="clearfix">
+	<strong class="title">Organaizations</strong>
+	<span class="cont">Member of BNI (Cents)</a></span>
+	</li>
+<!-- <li class="clearfix">
 	<strong class="title">Current Positions</strong>
 	<span class="cont">
 		<ul>
-			<li>Managing Partner at Jaya Cotton Products (1983- Present)</li>
-			<li>Joint Secretary of Gymnastics Federation of India (2019- Present)</li>
-			<li>Gymnastics Association of Andhra Pradesh (2014- Present)</li>
-			<li>Joint Secretary Andhra Pradesh Olympic Association (2018- Present)</li>
-			<li>Joint Secretary Andhra Pradesh Cotton Association (2014- Present)</li>
+			<li>Founder at Magsmen (Brand Consulting firm)</li>
+			<li>General Partner at Grovest (Venture Capitalist Firm)</li>
+			<li>Managing Partner at Jaya Cotton Products (A Cotton Manufacturing Unit)</li>
+			<li>Director Consultant at BNI Guntur</li>
 		</ul>
 	</span>
-	</li>
+	</li> -->
 </ul>
 </div>
 </div>
 </div>
 <div class="profile-social">
 <ul class="social">
-<li><a href="https://www.facebook.com/subbarao.namburu" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+<li><a href="https://www.facebook.com/gvvsubhash" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
 <!-- <li><a href="https://www.linkedin.com/in/sandeepnamburu" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li> -->
-<li><a href="https://instagram.com/namburusubbarao?igshid=vp5dfjm2kr28" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
+<li><a href="https://instagram.com/gvvsubhash?igshid=1qwxlkmwsghe8" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
 <!-- <li><a href="https://www.youtube.com/channel/UCG3agq3IYZmQifQeM2xFNbQ" target="_blank"><i class="rsicon rsicon-youtube"></i></a></li> -->
-<li><a href="https://www.google.com/search?q=jaya%20cotton&oq=jaya+cotton&aqs=chrome..69i57j69i60l2.5351j0j15&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk0006NfYQOaqRueeMfzN5Be1D3UmrA:1606480860746&rflfq=1&num=10&rldimm=16511832436485391200&lqi=CgtqYXlhIGNvdHRvbloaCgtqYXlhIGNvdHRvbiILamF5YSBjb3R0b24&ved=2ahUKEwjN6KvI36LtAhWWH7cAHdwZANwQvS4wAHoECAMQKw&rlst=f#rlfi=hd:;si:16511832436485391200,l,CgtqYXlhIGNvdHRvbloaCgtqYXlhIGNvdHRvbiILamF5YSBjb3R0b24;mv:[[16.2603822,80.4364007],[16.259957399999998,80.4360651]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" target="_blank"><i class="rsicon rsicon-map-marker"></i></a></li>
+<li><a href="https://g.page/nikith-marketing?share" target="_blank"><i class="rsicon rsicon-map-marker"></i></a></li>
 </ul></div>
 </div>
 <div class="section-txt-btn">
 <!-- <p><a class="btn btn-lg btn-border ripple" target="_blank" href="https://bit.ly/1P5CMQ3">
 Download Resume </a></p> -->
 <p style="color: #ffffff;">
-	A diversified business man with more
-than 35 years of experience in cotton
-industry. An imminent sports icon who
-led the state in reaching heights in
-Gymnastics and a sheer contributer who
-took the association to the next level..</p>
+	Started in the year 2019 with a motive "Save the earth & Eco-system".</p>
+	<p style="color: #ffffff;"> We trade Eco-friendly products which are alternative for plastics such as wooden cutlery, Bagasse, tableware, paper bags, tissue papers.</p>
 
 </div>
 </div>
 </section>
-<section id="accomplishments" class="section section-contact">
-	<div class="animate-up animated">
-	<h2 class="section-title">Accomplishments</h2>
-	<div class="row align-center">
-	<ul style="color: #ffffff;">
-		<li style="margin-bottom: 10px;">First Gold medalist for Acharya Nagarjuna
-			university in All india Inter-University
-			tournaments held at Gujrat</li>
-			<li style="margin-bottom: 10px;">Achieved various medals at state and National
-				tournaments in Gymnastics for
-				Andhra Pradesh</li>
-				<li style="margin-bottom: 10px;">Participated and achieved various medals in
-					school games in Gymnastics</li>
-					<li>Awarded as the best student of the year 1982 from National institute of sports, Patiala.</li>
+<section id="portfolio" class="section section-portfolio">
+<div class="animate-up">
+<h2 class="section-title">Gallery</h2>
+<div class="section-box bgWhite" style="display: flex; flex-direction: column;">
+	<!-- <object data="../Portfolio/Magsmen portfolio new.pdf" type="application/pdf" width="100%" height="500px" style="margin-bottom: 0;">
+		<embed src="../Portfolio/Magsmen portfolio new.pdf" type="application/pdf" style="overflow: hidden;">
+			</embed>
+	</object> -->
+<div >
+	<img src="images/Slider-img1.png" class="p-img">
+	<img src="images/image1_hover.jpg" class="p-img">
+</div>
+<div style="border-bottom: 5px dotted black; margin: 10px 0;"></div>
+<div>
+		<img src="images/image4_hover.jpg" class="p-img">
+		<img src="images/image2_hover.jpg" class="p-img">
+</div>
+<div style="border-bottom: 5px dotted black; margin: 10px 0;"></div>
+
+<div>
+	<img src="images/image5_hover.jpg" class="p-img">
+	<img src="images/Slider-img3.png" class="p-img">
+</div>
+<div style="border-bottom: 5px dotted black; margin: 10px 0;"></div>
+
+<div>
+	<div style="display: flex; justify-content: center;">
+		<img src="images/image3_hover.jpg" class="p-img">
+	</div>
+	
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="section section-portfolio">
+	<div class="animate-up">
+	<h2 class="section-title">Products we trade</h2>
+	<div class="" style="display: flex; justify-content: center; color: #ffffff;">
+
+	<ul>
+		<li>
+			Eco friendly Tableware, Compostable & Bio Degradable Products</li>
+		<li>
+			TableWare cups, Bowls, Plates, 3 4 5 Compartment Trays
+		</li>
+		<li>
+			Wooden Cutlery (Spoons, Forks, Knifes, Spoons, Chop Sticks, Skewers, Barbeque Forks, Fruit Pickers)
+		</li>
+		<li>Paper Straws, Paper Bags</li>
+		<li>Gun Skewers</li>
+		<li>Tissue Papers</li>
+		<li>Garbage Bags (Bio-Degradable)</li>
 	</ul>
+	
 	</div>
 	</div>
 	</section>
+
+<section id="authorisedDealers" class="section section-portfolio">
+	<div class="animate-up">
+	<h2 class="section-title">Authorised Dealers For</h2>
+	<div class="section-box bgWhite" style="display: flex; justify-content: center; padding: 15px;">
+
+	<div >
+		<img src="images/JK Copier.jpg" class="p-logo" style="width: 215px;">
+		<img src="images/Matrix.jpg" class="p-logo" style="width: 215px;">
+	</div>
+	<div>
+			<img src="images/Reflecton.jpg" class="p-logo" style="width: 215px;">
+			<img src="images/Copy gold.png" class="p-logo" style="width: 215px;">
+	</div>
+	
+	</div>
+	</div>
+	</section>
+
   <section id="contact" class="section section-contact">
-	<div class="animate-up animated">
+	  <div class="animate-up animated">
 		<div style="text-align: center;">
 			<h2 class="display-2" style="text-align: center;">Get in touch on whatsapp right away</h2>
-			<div id="myButton_subbarao" style="margin: auto; padding-top: 10px; display: inline-table;"></div>
+			<div id="myButton_subash" style="margin: auto; padding-top: 10px; display: inline-table;"></div>
 			
 			<div class="form-field">
 		
 		
 			</div>
 		</div>
+	<!-- <h2 class="section-title">Contact Us</h2>
+	<div class="row align-center">
+	<div class="col-sm-8">
+	<div class="section-box concat-us-border">
+	<h3 class="txtCenter">Feel free to contact me</h3>
+	<form class="contactForm" action="#" method="post">
+		<div class="input-field">
+			<input
+			  class="contact-name"
+			  type="text"
+			  name="name"
+			/><span class="line"></span>
+			<label>Name</label>
+		  </div>
+	<div class="input-field">
+	<input class="contact-email" type="email" name="email"><span class="line"></span>
+	<label>Email</label>
+	</div>
+	<div class="input-field">
+	<input class="contact-subject" type="text" name="subject"><span class="line"></span>
+	<label>Subject</label>
+	</div>
+	<div class="input-field">
+		<input class="contact-phone-number" type="text" name="phone-number"><span class="line"></span>
+		<label>Phone number</label>
+		</div>
+	<div class="input-field">
+	<textarea class="contact-message" rows="4" name="message"></textarea><span class="line"></span>
+	<label>Message</label>
+	</div>
+	<div class="g-recaptcha" data-theme="light" data-sitekey="" id="recaptcha1"></div>
+	<span class="btn-outer btn-primary-outer ripple bgGray">
+	<input class="contact-submit btn btn-lg btn-primary" type="submit" value="Send"></span>
+	<div class="contact-response"></div>
+	</form> </div>
+	</div> -->
 	</div>
 	</section>
 </div>
 </div>
 <footer class="footer" style="background-color: black;"><div class="footer-social">
 <ul class="social">
-<li><a href="https://www.facebook.com/subbarao.namburu" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+<li><a href="https://www.facebook.com/gvvsubhash" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
 <!-- <li><a href="https://www.linkedin.com/in/sandeepnamburu" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li> -->
-<li><a href="https://instagram.com/namburusubbarao?igshid=vp5dfjm2kr28" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
+<li><a href="https://instagram.com/gvvsubhash?igshid=1qwxlkmwsghe8" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
 <!-- <li><a href="https://www.youtube.com/channel/UCG3agq3IYZmQifQeM2xFNbQ" target="_blank"><i class="rsicon rsicon-youtube"></i></a></li> -->
-<li><a href="https://www.google.com/search?q=jaya%20cotton&oq=jaya+cotton&aqs=chrome..69i57j69i60l2.5351j0j15&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk0006NfYQOaqRueeMfzN5Be1D3UmrA:1606480860746&rflfq=1&num=10&rldimm=16511832436485391200&lqi=CgtqYXlhIGNvdHRvbloaCgtqYXlhIGNvdHRvbiILamF5YSBjb3R0b24&ved=2ahUKEwjN6KvI36LtAhWWH7cAHdwZANwQvS4wAHoECAMQKw&rlst=f#rlfi=hd:;si:16511832436485391200,l,CgtqYXlhIGNvdHRvbloaCgtqYXlhIGNvdHRvbiILamF5YSBjb3R0b24;mv:[[16.2603822,80.4364007],[16.259957399999998,80.4360651]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" target="_blank"><i class="rsicon rsicon-map-marker"></i></a></li>
+<li><a href="https://g.page/nikith-marketing?share" target="_blank"><i class="rsicon rsicon-map-marker"></i></a></li>
 </ul></div>
 </footer>
 </div>
@@ -257,7 +363,7 @@ took the association to the next level..</p>
 		var c = document.body.className;
 		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
 		document.body.className = c;
-	</script><script type="text/javascript" src="js/js-contact-form-subbarao.js" id="contact-form-js"></script><script type="text/javascript" src="js/jquery-blockui-jquery.blockUI.min.js" id="jquery-blockui-js"></script><script type="text/javascript" id="wc-add-to-cart-js-extra">
+	</script><script type="text/javascript" src="js/js-contact-form-rajesh.js" id="contact-form-js"></script><script type="text/javascript" src="js/jquery-blockui-jquery.blockUI.min.js" id="jquery-blockui-js"></script><script type="text/javascript" id="wc-add-to-cart-js-extra">
 /* <![CDATA[ */
 var wc_add_to_cart_params = {"ajax_url":"\/startuper\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/startuper\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/rscard.px-lab.com\/startuper\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
 /* ]]> */

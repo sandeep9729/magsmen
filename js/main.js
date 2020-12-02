@@ -283,7 +283,7 @@
 $(function () {
     $('#myButton').floatingWhatsApp({
         phone: '919044910449',
-        popupMessage: 'Hello, how can we help you?',
+        popupMessage: 'Hello, how can I help you?',
         message: "",
         showPopup: true,
         showOnIE: false,
@@ -294,6 +294,71 @@ $(function () {
     });
 });
 
+$(function () {
+    $('#myButton_subash').floatingWhatsApp({
+        phone: '918500698699',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_subbarao').floatingWhatsApp({
+        phone: '919848132498',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_venkat').floatingWhatsApp({
+        phone: '917780477693',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_vijaykrishna').floatingWhatsApp({
+        phone: '919347166699',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_rajesh').floatingWhatsApp({
+        phone: '919248022760',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
 $(document).ready(function(){
     $('.customer-logos').slick({
         width: 100,

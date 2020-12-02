@@ -11,7 +11,7 @@
 <link rel="icon" href="../images/magsmen-logo.png" type="image/x-icon">
 
 <link rel="stylesheet" href="./css/scrollbar.css">
-
+<link rel="stylesheet" href="../whatsapp/floating-wpp.css">
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script type="text/javascript" data-cfasync="false">
@@ -63,6 +63,16 @@ img.emoji {
 	padding: 0 !important;
 }
 
+@media screen and (max-width: 767px) {
+	.floating-wpp .floating-wpp-popup.active {
+    padding: 0 12px 12px 12px;
+    width: 260px;
+    height: auto;
+    bottom: 82px;
+    opacity: 1;
+    right: 50px;
+}
+	}
 </style><link rel="stylesheet" id="wp-block-library-css" href="css/block-library-style.min.css" type="text/css" media="all"><link rel="stylesheet" id="wc-block-vendors-style-css" href="css/build-vendors-style.css" type="text/css" media="all"><link rel="stylesheet" id="wc-block-style-css" href="css/build-style.css" type="text/css" media="all"><style id="woocommerce-inline-inline-css" type="text/css">
 .woocommerce form .form-row .required { visibility: visible; }
 </style><link rel="stylesheet" id="rscard-woocommerce-css" href="css/css-woocommerce.css" type="text/css" media="all"><link rel="stylesheet" id="rscard-woocommerce-layout-css" href="css/css-woocommerce-layout.css" type="text/css" media="all"><link rel="stylesheet" id="rscard-woocommerce-smallscreen-css" href="css/css-woocommerce-smallscreen.css" type="text/css" media="all"><link rel="stylesheet" id="google-font0-css" href="https://fonts.googleapis.com/css?family=Fredoka+One&amp;ver=5.5.3" type="text/css" media="all"><link rel="stylesheet" id="Open Sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&amp;ver=5.5.3" type="text/css" media="all"><link rel="stylesheet" id="Fredoka One-css" href="https://fonts.googleapis.com/css?family=Fredoka+One%3A400&amp;ver=5.5.3" type="text/css" media="all"><link rel="stylesheet" id="icon-fonts-map-css" href="css/css-map-icons.min.css" type="text/css" media="all"><link rel="stylesheet" id="icon-fonts-css" href="css/icomoon-style.css" type="text/css" media="all"><link rel="stylesheet" id="bxslider-css" href="css/jquery.bxslider-jquery.bxslider.css" type="text/css" media="all"><link rel="stylesheet" id="custom-scroll-css" href="css/jquery.customscroll-jquery.mCustomScrollbar.min.css" type="text/css" media="all"><link rel="stylesheet" id="mediaelement-player-css" href="css/jquery.mediaelement-mediaelementplayer.min.css" type="text/css" media="all"><link rel="stylesheet" id="owl-carousel-css" href="css/jquery.owlcarousel-owl.carousel.css" type="text/css" media="all"><link rel="stylesheet" id="owl-carousel-theme-css" href="css/jquery.owlcarousel-owl.theme.css" type="text/css" media="all"><link rel="stylesheet" id="slick-css" href="css/jquery.slick-slick.css" type="text/css" media="all"><link rel="stylesheet" id="rscard-style-css" href="css/rs-card-style.css" type="text/css" media="all"><script type="text/javascript" id="exactmetrics-frontend-script-js-extra">
@@ -360,66 +370,18 @@ suspensions. Talk to us to make your travel more smoother.
 	</div>
 	</section>
 
-  <section id="contact" class="section section-contact"><div class="animate-up animated">
-	<h2 class="section-title">Contact Us</h2>
-	<div class="row align-center">
-	<div class="col-sm-8">
-	<div class="section-box concat-us-border">
-	<h3 class="txtCenter">Feel free to contact me</h3>
-	<form class="contactForm" action="#" method="post">
-		<div class="input-field">
-			<input
-			  class="contact-name"
-			  type="text"
-			  name="name"
-			/><span class="line"></span>
-			<label>Name</label>
-		  </div>
-	<div class="input-field">
-	<input class="contact-email" type="email" name="email"><span class="line"></span>
-	<label>Email</label>
-	</div>
-	<div class="input-field">
-	<input class="contact-subject" type="text" name="subject"><span class="line"></span>
-	<label>Subject</label>
-	</div>
-	<div class="input-field">
-		<input class="contact-phone-number" type="text" name="phone-number"><span class="line"></span>
-		<label>Phone number</label>
+  <section id="contact" class="section section-contact">
+	<div class="animate-up animated">
+		<div style="text-align: center;">
+			<h2 class="display-2" style="text-align: center;">Get in touch on whatsapp right away</h2>
+			<div id="myButton_rajesh" style="margin: auto; padding-top: 10px; display: inline-table;"></div>
+			
+			<div class="form-field">
+		
+		
+			</div>
 		</div>
-	<div class="input-field">
-	<textarea class="contact-message" rows="4" name="message"></textarea><span class="line"></span>
-	<label>Message</label>
-	</div>
-	<div class="g-recaptcha" data-theme="light" data-sitekey="" id="recaptcha1"></div>
-	<span class="btn-outer btn-primary-outer ripple bgGray">
-	<input class="contact-submit btn btn-lg btn-primary" type="submit" value="Send"></span>
-	<div class="contact-response"></div>
-	</form> </div>
-	</div>
-	<!-- <div class="col-sm-6">
-	<div class="section-box contact-info has-map" style="min-height: 587px;">
-	<ul class="contact-list"><li class="clearfix">
-	<strong>E-mail </strong>
-	<span><a href="psandeepnamburu@gmail.com">psandeepnamburu@gmail.com</a></span>
-	</li>
-	<li class="clearfix">
-	<strong>Phone</strong>
-	<span>+91-9703356332</span>
-	</li>
-	<li class="clearfix">
-	<strong></strong>
-	<span></span>
-	</li>
-	<li class="clearfix">
-	<strong></strong>
-	<span></span>
-	</li>
-	</div>
-	</div> -->
-	</div>
-	</div>
-	</div>
+		</div>
 	</section>
 </div>
 </div>
@@ -462,5 +424,11 @@ var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File",
 var _wpmejsSettings = {"pluginPath":"\/startuper\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
 /* ]]> */
 </script><script type="text/javascript" src="js/jquery.owlcarousel-owl.carousel.js" id="owl-carousel-js"></script><script type="text/javascript" src="js/jquery.slick-slick.min.js" id="slick-js"></script><script type="text/javascript" src="js/plugins-jquery.smartsticky.js" id="smartsticky-js"></script><script type="text/javascript" src="js/js-wp-embed.min.js" id="wp-embed-js"></script>
+<script src="../whatsapp/jquery-3.3.1.min.js"></script>
+<script src="../whatsapp/floating-wpp.js"></script>
+<script src="../js/modernizr.js"></script>
+<!-- <script src="../js/jquery-3.2.1.min.js"></script> -->
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
