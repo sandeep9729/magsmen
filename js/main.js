@@ -372,6 +372,71 @@ $(function () {
         buttonImage: '<img src="whatsapp/whatsappimg.png" />'
     });
 });
+$(function () {
+    $('#myButton_vinod').floatingWhatsApp({
+        phone: '919885050850',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_karteek').floatingWhatsApp({
+        phone: '919542822255',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_nagarjunakapil').floatingWhatsApp({
+        phone: '919849160911',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_nagoorbasha').floatingWhatsApp({
+        phone: '919642461623',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
+$(function () {
+    $('#myButton_ramakrishna').floatingWhatsApp({
+        phone: '919246463834',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
 $(document).ready(function(){
     $('.customer-logos').slick({
         width: 100,

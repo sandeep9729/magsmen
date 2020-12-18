@@ -153,6 +153,12 @@
 .carousel-width{
     max-width: 500px;
 }
+.show-desktop {
+    display: block;
+}
+.show-mobile {
+                display: none;
+            }
         @media screen and (max-width: 767px) {
             .floating-wpp .floating-wpp-popup.active {
                 padding: 0 12px 12px 12px;
@@ -164,7 +170,12 @@
                 right: 80px;
 
             }
-
+            .show-desktop {
+                display: none;
+            }
+            .show-mobile {
+                display: block;
+            }
             .pad-t-xs-125 {
                 padding-top: 125px;
             }
@@ -332,10 +343,15 @@ and (orientation : landscape) {
         </div> -->
 
         <div class="bg-holder">
-            <div class="bg-video">
+            <div class="bg-video show-desktop">
                 <video autoplay muted loop>
-                    <source src="./assets/main_background_video.mp4" type="video/mp4">
+                    <source src="./assets/magsmen background.mp4" type="video/mp4">
                 </video> </div>
+                <div class="bg-video show-mobile">
+                    <video autoplay muted loop style="max-width: 100%;height: -webkit-fill-available;">
+                        <source src="./assets/magsmen background mobile.m4v" type="video/mp4">
+                    </video> </div>
+
         </div>
 
         <div class="home-content">
@@ -392,7 +408,7 @@ and (orientation : landscape) {
 
     <!-- about
     ================================================== -->
-    <section id="about" class="s-about target-section pad-t-10-xs pad-b-20-xs">
+    <section id="about" class="s-about target-section pad-t-10-xs pad-b-20-xs" style="padding-bottom: 0px;">
 
         <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
@@ -430,6 +446,8 @@ and (orientation : landscape) {
                             Creating & Increasing Business values with brand stories.
                         </p>
                     </div>
+                    <img src="assets/iso_compress65.jpg" alt="">
+                    <h1 class="display-1 show-mobile" style="padding-top: 45px; text-align: center;">Certified to be finest</h1>
                 </div>
                 <div class="col-block item-process" data-aos="fade-up">
                     <div class="item-process__text center">
@@ -439,6 +457,7 @@ and (orientation : landscape) {
                             market. To redefine the meaning of branding.
                         </p>
                     </div>
+                    <h1 class="display-1 show-desktop" style="padding-top: 45px;">Certified to be finest</h1>
                 </div>
                 <div class="col-block item-process" data-aos="fade-up">
                     <div class="item-process__text">
@@ -459,7 +478,7 @@ and (orientation : landscape) {
 
     <!-- services
     ================================================== -->
-    <section id='services' class="s-services target-section darker">
+    <section id='services' class="s-services target-section darker" style="padding-top: 0px;">
 
         <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
@@ -662,15 +681,15 @@ and (orientation : landscape) {
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/lion_paint.jpg" class="thumb-link" title="Lion Gold Paint"
+                            <a href="images/portfolio/gallery/artbliss_compress92.jpg" class="thumb-link" title="Art Bliss"
                                 data-size="1050x700">
-                                <img src="images/portfolio/lion_paint.jpg" alt="">
+                                <img src="images/portfolio/artbliss_compress92.jpg" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                Lion Gold Paint
+                               Art Bliss
                             </h3>
                             <p class="item-folio__cat">
                                 Branding
@@ -688,22 +707,22 @@ and (orientation : landscape) {
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/bd.jpg" class="thumb-link" title="Bakery Delights"
+                            <a href="images/portfolio/gallery/integrity.jpg" class="thumb-link" title="Integrity Global Services"
                                 data-size="1050x700">
-                                <img src="images/portfolio/bd.jpg" alt="">
+                                <img src="images/portfolio/integrity.jpg" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                Bakery Delights
+                                Integrity Global Services
                             </h3>
                             <p class="item-folio__cat">
                                 Branding
                             </p>
                         </div>
 
-                        <a href="https://www.facebook.com/Bakery-Delights-1151407844936309" class="item-folio__project-link" title="Bakery Delights Facebook">
+                        <a href="https://www.facebook.com/Integrity-Global-Services-121883379721661/" class="item-folio__project-link" title="Integrity Global Services Facebook">
                             <i class="icon-link"></i>
                         </a>
 
@@ -714,22 +733,22 @@ and (orientation : landscape) {
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/box.jpg" class="thumb-link" title="The #Box"
+                            <a href="images/portfolio/gallery/magsmen works.jpg" class="thumb-link" title="Magsmen Works"
                                 data-size="1050x700">
-                                <img src="images/portfolio/box.jpg" alt="">
+                                <img src="images/portfolio/magsmen works.jpg" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                The #Box
+                                Magsmen Works
                             </h3>
                             <p class="item-folio__cat">
                                 Branding
                             </p>
                         </div>
 
-                        <a href="https://www.facebook.com/thehashbox" class="item-folio__project-link" title="The #Box Facebook">
+                        <a href="https://www.facebook.com/magsmenindia/" class="item-folio__project-link" title="Magsmen India Facebook">
                             <i class="icon-link"></i>
                         </a>
 
@@ -740,22 +759,22 @@ and (orientation : landscape) {
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/i9_builders.png" class="thumb-link" title="I9 Builders"
+                            <a href="images/portfolio/gallery/lsj.jpg" class="thumb-link" title="LSJ"
                                 data-size="1050x700">
-                                <img src="images/portfolio/i9_builders.png" alt="">
+                                <img src="images/portfolio/lsj.jpg" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                I9 Builders
+                               LSJ
                             </h3>
                             <p class="item-folio__cat">
                                 Branding
                             </p>
                         </div>
 
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                        <a href="https://www.facebook.com/Lakshmi-Srinivasa-Jewellery-112224923495539/" class="item-folio__project-link" title="LSJ Faacebook">
                             <i class="icon-link"></i>
                         </a>
 
@@ -791,9 +810,9 @@ and (orientation : landscape) {
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/gowri senkar.png" class="thumb-link" title="Gowri Sankar"
+                            <a href="images/portfolio/gallery/gowri.jpg" class="thumb-link" title="Gowri Sankar"
                                 data-size="1050x700">
-                                <img src="images/portfolio/gallery/gowri senkar.png" alt="">
+                                <img src="images/portfolio/gallery/gowri.jpg" alt="">
                             </a>
                         </div>
 
@@ -955,7 +974,7 @@ and (orientation : landscape) {
 
    <!-- contact
     ================================================== -->
-    <section id="contact" class="s-contact target-section">
+    <section id="contact" class="s-contact target-section" style="padding-bottom: 5rem;">
 
         <!-- <div class="grid-overlay">
                 <div></div>
@@ -964,7 +983,7 @@ and (orientation : landscape) {
         <div class="row section-header narrow" >
             <div class="col-full">
                 <h3 class="subhead">KEEP IN TOUCH !</h3>
-                <h2 class="display-2">Lets Work Together</h2>
+                <h2 class="display-2">Let's Work Together</h2>
             </div>
         </div> <!-- end section-header -->
         <div class="row contact-main" >
@@ -1007,7 +1026,10 @@ and (orientation : landscape) {
                     </li>
                    
                 </ul>
-                
+<div style="padding: 20px 0 10px;">
+    <img src="assets/iso_compress65.jpg" alt="" style="height: 100x; width: 100px;">
+
+</div>
             </div>
         </div>
 
