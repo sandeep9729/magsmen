@@ -65,6 +65,14 @@ img.emoji {
 .header-has-img.home .head-bg{
 	height: 131px !important;
 }
+.project-icon{
+	width: 25%; 
+	text-align: center; 
+	margin-bottom: 0 !important;
+}
+.desktop-flex{
+	display: flex;
+}
 @media screen and (max-width: 767px) {
 	.floating-wpp .floating-wpp-popup.active {
     padding: 0 12px 12px 12px;
@@ -73,6 +81,14 @@ img.emoji {
     bottom: 82px;
     opacity: 1;
     right: 50px;
+}
+.project-icon{
+	width: 100%; 
+	text-align: center; 
+	margin-bottom: 0;
+}
+.desktop-flex{
+	display: block;
 }
 	}
 </style><link rel="stylesheet" id="wp-block-library-css" href="css/block-library-style.min.css" type="text/css" media="all"><link rel="stylesheet" id="wc-block-vendors-style-css" href="css/build-vendors-style.css" type="text/css" media="all"><link rel="stylesheet" id="wc-block-style-css" href="css/build-style.css" type="text/css" media="all"><style id="woocommerce-inline-inline-css" type="text/css">
@@ -107,7 +123,7 @@ var date = {"months":["January","February","March","April","May","June","July","
 	<li id="menu-item-468" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#about">About</a></li>
 	<li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#portfolio">Gallery</a></li>
 	
-	<li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#experience">Services Offered</a></li>
+	<li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#experience">Projects We Deal</a></li>
 	<li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="#contact">Contact</a></li>
 	</ul></nav></div>
 </div>
@@ -153,7 +169,7 @@ var date = {"months":["January","February","March","April","May","June","July","
 <div class="row">
 <div class="col-sm-5">
 <div class="profile-photo">
-<img alt="" src="../images/client-logos/I 9 black.png" class="photo"></div>
+<img alt="" src="./images/I9(1)_compress1.jpg" class="photo"></div>
 </div>
 <div class="col-sm-7">
 <div class="profile-info">
@@ -230,8 +246,8 @@ Download Resume </a></p> -->
 </div>
 <div style="border-bottom: 5px dotted black; margin: 10px 0;"></div>
 <div>
-		<img src="images/AS inter 2.jpeg">
-		<img src="images/grand.jpeg">
+		<img src="images/AS inter 2.jpeg"  class="p-img">
+		<img src="images/grand.jpeg"  class="p-img">
 </div>
 <div style="border-bottom: 5px dotted black; margin: 10px 0;"></div>
 
@@ -243,35 +259,44 @@ Download Resume </a></p> -->
 
 <div>
 	<div style="display: flex; justify-content: center;">
-		<img src="images/max.jpeg">
+		<img src="images/max.jpeg"  class="p-img">
 	</div>
 	
 </div>
 </div>
 </div>
 </section>
-<section id="experience" class="section section-portfolio">
-	<div class="animate-up">
-	<h2 class="section-title">Projects we deal</h2>
-	<div class="" style="display: flex; justify-content: center; color: #ffffff;">
-
-	<ul>
-		<li>
-			Residential and Commercial Projects</li>
-		<li>
-			Ware Houses
-		</li>
-		<li>
-			Function Halls
-		</li>
-		<li>Hospitals</li>
-		<!-- <li>Gun Skewers</li> -->
-		<!-- <li>Tissue Papers</li> -->
-		<!-- <li>Garbage Bags (Bio-Degradable)</li> -->
-	</ul>
-	
-	</div>
-	</div>
+	<section id="experience" class="section section-services text-left">
+		<div class="animate-up animated">
+			<h2 class="section-title">Projects We Deal</h2>
+			<div class="section-box bgWhite">
+				<div class="desktop-flex">
+					<div class="service project-icon">
+						<div class="service-icon">
+							<img src="images/residential.png" height="50px" width="50px">
+						</div>
+					<h3 class="service-title">Residential and Commercial Projects</h3>
+					</div>
+					<div class="service project-icon">
+						<div class="service-icon">
+							<img src="images/ware house.png" height="50px" width="50px">
+						</div>
+							<h3 class="service-title">Ware Houses</h3>
+					</div>
+					<div class="service project-icon">
+						<div class="service-icon">
+							<img src="images/halls.png" height="50px" width="50px">
+						</div>
+					<h3 class="service-title">Function Halls</h3>
+					</div>
+					<div class="service project-icon">
+						<div class="service-icon"><img src="images/hospitals.png" height="50px" width="50px">
+						</div>
+					<h3 class="service-title">Hospitals</h3>
+					</div>
+					</div>
+				</div>
+			</div>
 	</section>
 
 <!-- <section id="authorisedDealers" class="section section-portfolio"> -->
