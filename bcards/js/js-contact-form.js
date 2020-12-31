@@ -93,7 +93,7 @@ if( captchaElements.length > 0 ){
 					Host : "smtp.elasticemail.com",
 					Username : "prathapkumar.bobby@gmail.com",
 					Password : "7146FD4ECF85983082096181691565248C92",
-					To : "psandeepnamburu@gmail.com",
+					To : "prasanth.bulla23@gmail.com",
 					From : "growth@magsmen.in",
 					Subject : subject.val(),
 					Body : "<html><b>Name: </b>" + 
