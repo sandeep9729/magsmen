@@ -450,6 +450,19 @@ $(function () {
         buttonImage: '<img src="whatsapp/whatsappimg.png" />'
     });
 });
+$(function () {
+    $('#myButton_srinivas').floatingWhatsApp({
+        phone: '918977733555',
+        popupMessage: 'Hello, how can I help you?',
+        message: "",
+        showPopup: true,
+        showOnIE: false,
+        headerTitle: 'Welcome!',
+        headerColor: '#075e54',
+        backgroundColor: '#075e54',
+        buttonImage: '<img src="whatsapp/whatsappimg.png" />'
+    });
+});
 $(document).ready(function(){
     $('.customer-logos').slick({
         width: 100,
